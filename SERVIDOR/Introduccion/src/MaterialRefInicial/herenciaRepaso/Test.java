@@ -1,4 +1,4 @@
-package herenciaRepaso;
+package MaterialRefInicial.herenciaRepaso;
 
 public class Test {
 

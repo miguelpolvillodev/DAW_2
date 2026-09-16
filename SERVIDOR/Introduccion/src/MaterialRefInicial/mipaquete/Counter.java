@@ -1,4 +1,4 @@
-package mipaquete;
+package MaterialRefInicial.mipaquete;
 
 public class Counter {
 

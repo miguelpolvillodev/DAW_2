@@ -1,4 +1,4 @@
-package herenciaRepaso;
+package MaterialRefInicial.herenciaRepaso;
 
 public abstract class Figura {
 

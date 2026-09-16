@@ -136,3 +136,4 @@
 2026-09-16 15:37:32.411: [INFO] BookmarkModelLoaded, ids_reassigned: 0
 2026-09-16 15:37:32.411: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-09-16 15:37:32.411: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-16 16:23:00.067: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

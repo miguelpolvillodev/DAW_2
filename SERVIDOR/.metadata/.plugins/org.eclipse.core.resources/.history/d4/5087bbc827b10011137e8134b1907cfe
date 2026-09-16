@@ -1,0 +1,18 @@
+
+public class Counter {
+
+	private int value = 0;
+	private int maxValue = 100_000;
+	private String model = "N-COUNTER";
+
+	public Counter() {
+
+	}
+
+	public Counter(int value, int maxValue, String model) {
+		this.value = value;
+		this.maxValue = maxValue;
+		this.model = model;
+	}
+
+}

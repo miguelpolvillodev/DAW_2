@@ -1,0 +1,39 @@
+package herenciaRepaso;
+
+public class Cuadrado extends Figura {
+
+	private static final int LADO = 4;
+
+	public Cuadrado(String color, int lado) {
+		super(color);
+	}
+
+	public int getLado() {
+		return LADO;
+	}
+
+
+	@Override
+	public double area() {
+		double res = 0;
+		int ladosTotal = 4;
+
+		res = LADO * ladosTotal;
+		return res;
+	}
+
+	@Override
+	public double perimetro() {
+		double res = 0;
+
+		res = lado * lado;
+		return res;
+	}
+
+	@Override
+	public String toString() {
+
+		return "Cuadrado de " + lado + " lados";
+	}
+
+}

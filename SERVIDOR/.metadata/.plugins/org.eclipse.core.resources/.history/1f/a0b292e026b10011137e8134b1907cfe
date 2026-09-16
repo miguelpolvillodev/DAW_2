@@ -1,0 +1,16 @@
+
+public class OperacionesConEnteros {
+
+	public static void main(String[] args) {
+
+		int x = 0;
+		int z = 0;
+
+	}
+
+	public Integer cuadrado(int x, int z) {
+		Integer result = 0;
+		return result;
+	}
+
+}

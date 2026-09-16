@@ -1,0 +1,20 @@
+
+public class Counter {
+
+	public static void main(String[] args) {
+
+	
+		int x = 5;
+		
+	Integer cuadrado = cuadrado(x);
+
+	}
+
+	public Integer cuadrado(int x) {
+		Integer result = 0;
+		return result;
+	}
+	
+	
+
+}

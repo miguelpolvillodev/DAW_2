@@ -1,0 +1,11 @@
+
+public class App {
+
+	public static void main(String[] args) {
+		Counter c1 = new Counter();
+		
+		System.out.println(c1);
+
+	}
+
+}

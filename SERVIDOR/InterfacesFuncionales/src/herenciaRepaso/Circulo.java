@@ -1,0 +1,42 @@
+package herenciaRepaso;
+
+public class Circulo extends Figura {
+
+	private static final double PI = 3.14;
+	private int radio;
+
+	public Circulo(String color, int radio) {
+		super(color);
+		this.radio = radio;
+	}
+
+	public int getRadio() {
+		return radio;
+	}
+
+	public void setRadio(int radio) {
+		this.radio = radio;
+	}
+
+	public static double getPi() {
+		return PI;
+	}
+
+	@Override
+	public double area() {
+		double res = PI * (radio * radio);
+		return res;
+	}
+
+	@Override
+	public double perimetro() {
+		double res = 2 * PI * radio;
+		return res;
+	}
+
+	@Override
+	public String toString() {
+		return "Circulo con radio: " + this.radio;
+	}
+
+}

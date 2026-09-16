@@ -1,0 +1,33 @@
+package herenciaRepaso;
+
+public class Cuadrado extends Figura {
+
+	private int lado;
+
+	public Cuadrado(String color) {
+		super(color);
+		this.lado = lado;
+	}
+
+	@Override
+	public double area() {
+		double res = 0;
+		int lados = 4;
+
+		res = lado * 4;
+		return res;
+	}
+
+	@Override
+	public double perimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,30 @@
+package herenciaRepaso;
+
+public class Rectangulo extends Figura {
+
+	private int base;
+	private int altura;
+
+	public Rectangulo(String color, int base, int altura) {
+		super(color);
+		this.base = base;
+		this.altura = altura;
+	}
+
+	@Override
+	public double area() {
+		double res = base * altura;
+		return res;
+	}
+
+	@Override
+	public double perimetro() {
+		double res = (2 * base) + (2 * altura);
+		return res;
+	}
+
+	@Override
+	public String toString() {
+		return "Rectángulo de base " + base + " y altura " + altura;
+	}
+}

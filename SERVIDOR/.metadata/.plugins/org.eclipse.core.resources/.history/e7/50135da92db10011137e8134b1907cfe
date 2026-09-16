@@ -1,0 +1,8 @@
+package herenciaRepaso;
+
+public abstract class Figura {
+
+	private String color;
+	
+	
+}

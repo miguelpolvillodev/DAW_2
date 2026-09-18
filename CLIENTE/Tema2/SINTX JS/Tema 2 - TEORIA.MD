@@ -43,3 +43,11 @@ concatena
 toFixed --> trunca decimales a los que quieras
 parseInt --> convierte sring en numero
 isNaN --> Es algo que no es un numero? true si no es un numero false si es un numero
+
+Undefined --> variable no inicializada
+Null --> variable asignada con null
+
+=== --> mismo valor y tipo
+!== --> compara si son distintos en valor y tipo
+
+CUADROS DE DIALOGO EMERGENTES

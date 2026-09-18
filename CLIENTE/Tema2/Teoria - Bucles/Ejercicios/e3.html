@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tipo = prompt("Introduce topping: oreo/kitkat/brownie/lacasitos");
+      switch (tipo) {
+        case "oreo":
+          document.write("El topping de oreo cuesta 1€");
+          break;
+        case "kitkat":
+          document.write("El topping de kitkat cuesta 1.50€");
+          break;
+        case "lacasitos":
+          document.write("El topping de kitkat cuesta 0.95€");
+          break;
+        case "bownie":
+          document.write("El topping de brownie cuesta 0.75€");
+          break;
+
+        default:
+          document.write(
+            "No tenemos ese topping lo sentimos. Helado sin topping cuesta 1.90",
+          );
+          break;
+      }
+    </script>
+  </body>
+</html>

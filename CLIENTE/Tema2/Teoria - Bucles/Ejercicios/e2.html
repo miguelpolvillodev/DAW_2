@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      do {
+        num = prompt("Introduce un número entre 0 y 23");
+      } while (parseInt(num) < 0 || parseInt(num) > 23);
+
+      if (isNaN(parseInt(num))) {
+        alert("Debe ser un numero");
+      } else {
+        if (num >= 6 && num <= 11) {
+          document.write("Buenos dias");
+        } else if (num >= 12 && num <= 20) {
+          document.write("Buenas tardes");
+        } else {
+          document.write("Buenas noches");
+        }
+      }
+    </script>
+  </body>
+</html>

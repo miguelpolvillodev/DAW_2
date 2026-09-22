@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let hoy = new Date(2026, 8, 22);
+      let final = new Date(2027, 5, 25);
+
+      let res = final - hoy;
+      let numDias = res / (24 * 60 * 60 * 1000);
+
+      document.write(`Quedan ${numDias} para que acabe el curso`);
+    </script>
+  </body>
+</html>

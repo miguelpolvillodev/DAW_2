@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fecha1 = new Date();
+      let cumpleaños = new Date(1999, 3, 13);
+
+      document.write(`Hoy es: ${fecha1}<br>`);
+      document.write(`Mi cumpleaño es: ${cumpleaños} <br>`);
+      let fecha1_año = fecha1.getFullYear();
+      let cumpleaños_año = cumpleaños.getFullYear();
+      document.write(`Año de hoy: ${fecha1_año}<br>`);
+      document.write(`Año de mi cumple: ${cumpleaños_año}<br>`);
+      fecha1.setDate(2025, 8, 22);
+      document.write(`Hace un año: ${fecha1}<br>`);
+
+      document.write(
+        `Fecha bonita: ${fecha1.getDate()}/${fecha1.getMonth()}/${fecha1.getFullYear()}`,
+      );
+    </script>
+  </body>
+</html>

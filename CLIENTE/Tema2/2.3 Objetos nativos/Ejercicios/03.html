@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let dia = prompt("Dime tu dia en el que cumples años");
+      let mes = prompt("Dime tu mes en el que cumples");
+
+      for (let años = 2026; años < 2100; años++) {
+        for (let meses = 0; meses <= 11; meses++) {
+          let fechaActual = new Date(años, meses, dia);
+          if (fechaActual.getDay() == 0 && meses == mes) {
+            document.write(
+              `${fechaActual.getDate()} / ${fechaActual.getMonth()} / ${fechaActual.getFullYear()} <br>`,
+            );
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

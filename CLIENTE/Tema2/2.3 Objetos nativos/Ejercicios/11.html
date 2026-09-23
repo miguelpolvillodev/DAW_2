@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nombre = prompt("Introduce tu nombre");
+
+      let fecha = new Date();
+
+      let hora = fecha.toLocaleTimeString().substring(0, 2);
+
+      if (hora >= 7 && hora <= 12) {
+        alert(`Buenas dias ${nombre}`);
+      } else if (hora > 12 && hora <= 20) {
+        alert(`Buenas tardes ${nombre}`);
+      } else {
+        alert(`Buenas noches ${nombre}`);
+      }
+    </script>
+  </body>
+</html>

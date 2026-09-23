@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fechaIn = prompt(
+        "Introduce tu fecha de nacimiento en dormato dd/mm/yyyy",
+      );
+      let actual = new Date();
+
+      console.log(`${fechaIn}`);
+      let res = actual.getFullYear() - fechaIn.substring(6);
+
+      document.write(`Tu edad es ${res} años <br>`);
+
+      let fechaNac = new Date(
+        fechaIn.substring(6),
+        fechaIn.substring(3, 5),
+        fechaIn.substring(0, 2),
+      );
+
+      let diaSemana = fechaNac.getDay();
+
+      switch (diaSemana) {
+        case 0:
+          document.write("Domingo");
+          break;
+        case 1:
+          document.write("Lunes");
+          break;
+        case 2:
+          document.write("Martes");
+          break;
+        case 3:
+          document.write("Miércoles");
+          break;
+        case 4:
+          document.write("Jueves");
+          break;
+        case 5:
+          document.write("Viernes");
+          break;
+        case 6:
+          document.write("Sábado");
+          break;
+        default:
+          break;
+      }
+    </script>
+  </body>
+</html>

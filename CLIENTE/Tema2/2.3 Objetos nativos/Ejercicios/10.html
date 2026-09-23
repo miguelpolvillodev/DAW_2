@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let res = 0;
+      let cadena = "";
+      for (let i = 0; i <= 10; i++) {
+        let random = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+        res = random + res;
+        cadena += random + " ";
+      }
+      document.write(`La suma de los numeros: ${cadena} es ${res}`);
+    </script>
+  </body>
+</html>

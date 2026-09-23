@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fechaActual = new Date();
+      //dd/mm/yyyy
+      document.write(`${fechaActual.toLocaleDateString()}<br>`);
+      //wed sep 23 2026
+      document.write(`${fechaActual.toDateString()}<br>`);
+      //dd/mm/yyyy, hh:mm:ss
+      document.write(`${fechaActual.toLocaleString()} <br>`);
+      //hh:mm:ss
+      document.write(fechaActual.toLocaleTimeString());
+    </script>
+  </body>
+</html>

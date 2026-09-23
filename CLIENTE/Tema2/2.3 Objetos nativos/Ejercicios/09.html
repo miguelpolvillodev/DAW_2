@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let random = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+
+      let input = prompt("Adivina el numero");
+
+      if (input == random) {
+        alert("Felicidades, adivinaste el número!");
+      } else {
+        alert(`Lo siento el número era ${random}`);
+      }
+    </script>
+  </body>
+</html>

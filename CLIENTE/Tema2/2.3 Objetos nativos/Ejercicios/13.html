@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let datos = prompt("Dime tu nombre y apellidos");
+
+      document.write(
+        `Tamaño de nombre y apellidos sin espacios: ${datos.replace(" ", "").length} <br>`,
+      );
+      document.write(
+        `cadena en minuscula: ${datos.toLowerCase()} // cadena en MAYUS: ${datos.toUpperCase()} <br>`,
+      );
+      let primerEspacio = datos.indexOf(" ");
+      let ultEspacio = datos.lastIndexOf(" ");
+      document.write(
+        `Divide nombre y apellidos: ${datos.substring(0, primerEspacio)} <br> ${datos.substring(primerEspacio, ultEspacio)} <br> ${datos.substring(ultEspacio)} <br>`,
+      );
+      document.write(
+        `${datos.substring(0, 1).toLowerCase()}${datos.substring(primerEspacio + 1, ultEspacio).toLowerCase()}${datos.substring(ultEspacio + 1, ultEspacio + 2).toLowerCase()} <br>`,
+      );
+      document.write(
+        `${datos.substring(0, 3).toLowerCase()}${datos.substring(primerEspacio + 1, primerEspacio + 4).toLowerCase()}${datos.substring(ultEspacio + 1, ultEspacio + 4).toLowerCase()}`,
+      );
+    </script>
+  </body>
+</html>

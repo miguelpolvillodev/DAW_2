@@ -23,4 +23,5 @@ public class HomeController {
 	public String adiosMundo() {
 		return "adios";
 	}
+
 }

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Página principal</h1>
+
+    <button type="button" onclick="abrirBoton()">Abre ventana</button>
+    <button type="button" onclick="mover()">Mueve 200x300</button>
+    <button type="button" onclick="mover2()">Mueve a 500 - 200</button>
+    <button type="button" onclick="aumentar()">Aumenta 100x100</button>
+    <button type="button" onclick="tamaño()">Cambiar tamaño a 100x150</button>
+
+    <script>
+      var b1;
+      function abrirBoton() {
+        b1 = window.open(
+          "16-segunda.html",
+          "b1",
+          "width=300, height=400,top=400,left=400",
+        );
+        b1.focus();
+      }
+
+      function mover() {
+        b1.moveBy(200, 300);
+        b1.focus();
+      }
+
+      function mover2() {
+        b1.moveTo(500, 200);
+        b1.focus();
+      }
+
+      function aumentar() {
+        b1.resizeBy(100, 100);
+        b1.focus();
+      }
+
+      function tamaño() {
+        b1.resizeTo(100, 150);
+        b1.focus();
+      }
+    </script>
+  </body>
+</html>

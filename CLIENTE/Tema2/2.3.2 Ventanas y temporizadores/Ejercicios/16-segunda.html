@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Pagina secundaria</h2>
+    <button type="button" onclick="colorSecundaria()">
+      Cambiar este color
+    </button>
+    <button type="button" onclick="colorPrimaria()">
+      Cambiar color primaria
+    </button>
+    <button type="button" onclick="closeSegunda()">Cierra esta ventana</button>
+    <button type="button" onclick="closeAll()">Cierra todo</button>
+
+    <script>
+      function colorSecundaria() {
+        document.body.style.backgroundColor = "green";
+      }
+
+      function colorPrimaria() {
+        window.opener.document.body.style.backgroundColor = "red";
+      }
+
+      function closeSegunda() {
+        window.close();
+      }
+
+      function closeAll() {
+        closeSegunda();
+        window.opener.close();
+      }
+    </script>
+  </body>
+</html>

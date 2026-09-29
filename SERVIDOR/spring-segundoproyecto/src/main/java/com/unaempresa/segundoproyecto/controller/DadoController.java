@@ -14,6 +14,6 @@ public class DadoController {
 	@GetMapping("/dado")
 	public String dadoHandler(Model model) {
 		model.addAttribute("caraDado", RandomGenerator.getDefault().nextInt(1,7));
-		return "/dado";
+		return "dado";
 	}
 }

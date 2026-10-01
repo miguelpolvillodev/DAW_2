@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Talleres</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>NOMBRE</th>
+				<th>PLAZAS</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="taller : ${listaTalleres}">
+				<td><a th:href="@{'/taller/uno/' + ${taller.id}}" th:text="${taller.id}"></a></td>
+				<td th:text="${taller.getNombre()}"></td>
+				<td th:text="${taller.getPlazas()}"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

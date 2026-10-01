@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Datos de un taller</h1>
+	<p th:if="${taller == null}">No hay datos que mostrar</p>
+	<ul th:if="${taller != null}">
+		<li>Id: <span th:text="${taller.getId()}"></span></li>
+		<li>Nombre: <span th:text="${taller.getNombre()}"></span></li>
+		<li>Plazas: <span th:text="${taller.getPlazas()}"></span></li>
+	</ul>
+	<a th:href="@{/taller/todos}">Ver todos los Talleres</a>
+</body>
+</html>

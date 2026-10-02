@@ -1,0 +1,38 @@
+.contenedor{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.color1{
+    background-color: #7e9f35;
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+}
+
+.color2{
+    background-color: #4a2d74;
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    color: white;
+}
+
+.color3{
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+}
+
+p{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+ 
+}
+   
+

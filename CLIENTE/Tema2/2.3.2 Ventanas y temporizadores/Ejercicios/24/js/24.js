@@ -1,7 +1,8 @@
-var cont = parseInt(prompt("Introduce numero de segundos"));
-function abrirVentana(cont) {
+
+function abrirVentana() {
+  let cont = parseInt(document.getElementById("segundos").value);
   let nuevaVentana = window.open(
-    "23-segunda.html",
+    "24-segunda.html",
     "",
     "width= 400, height=300",
   );
@@ -14,7 +15,8 @@ function abrirVentana(cont) {
       clearInterval(temp1);
     } else {
       cont--;
-      nuevaVentana.document.body.innerHTML = `<p>Cuenta atras: ${cont}</p>`;
+      //nuevaVentana.document.body.innerHTML = `<p>Cuenta atras: ${cont}</p>`;
+      nuevaVentana.document.getElementById("contador").innerHTML = `${cont}`
     }
   }
 }

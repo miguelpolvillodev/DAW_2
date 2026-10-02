@@ -2,7 +2,7 @@ var tiempoMs;
 var restantes;
 var intervalo;
 
-tiempoMs = window.opener.document.getElementById("segundos").value;
+tiempoMs = window.opener.document.getElementById("segundos")
 restantes = tiempoMs;
 
 intervalo = setInterval(f1, 1000);
@@ -19,3 +19,4 @@ function f1() {
     window.document.body.innerHTML = `<p>Cuenta atrás: ${restantes}</p>`;
   }
 }
+

@@ -13,7 +13,7 @@ function abrirVentana() {
     if (cont == 0) {
       nuevaVentana.close();
     } else {
-      nuevaVentana.document.body.innerHTML = `<p>Cuenta atras: ${(cont = cont - 1)}</p>`;
+      nuevaVentana.document.getElementById("contador").innerHTML = ` ${(cont = cont - 1)}`;
     }
   }
 }

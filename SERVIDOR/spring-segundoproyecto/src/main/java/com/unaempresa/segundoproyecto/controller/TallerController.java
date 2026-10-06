@@ -20,11 +20,11 @@ public class TallerController {
 	private List<Taller> crearTaller() {
 		List<Taller> ts = new ArrayList<>();
 
-		ts.add(new Taller("Taller 1", 10));
-		ts.add(new Taller("Taller 2", 15));
-		ts.add(new Taller("Taller 3", 3));
-		ts.add(new Taller("Taller 4", 12));
-		ts.add(new Taller("Taller 5", 100));
+		ts.add(new Taller("Taller 1", 10, "Normal"));
+		ts.add(new Taller("Taller 2", 15, "Normal"));
+		ts.add(new Taller("Taller 3", 3, "Premium"));
+		ts.add(new Taller("Taller 4", 12, "Premium"));
+		ts.add(new Taller("Taller 5", 100, "Normal"));
 
 		return ts;
 	}
@@ -38,6 +38,17 @@ public class TallerController {
 		return null;
 	}
 
+	private List<Taller> talleresFiltrados(String tipo) {
+		List<Taller> talleresFiltro = new ArrayList<>();
+
+		for (Taller t : listaTaller) {
+			if (t.getTipo().equals(tipo)) {
+				talleresFiltro.add(t);
+			}
+		}
+		return talleresFiltro;
+	}
+
 	@GetMapping("/uno/{id}")
 	public String unTallerPorId(Model model, @PathVariable int id) {
 		model.addAttribute("taller", dameIdTaller(id));
@@ -47,7 +58,13 @@ public class TallerController {
 	@GetMapping("/todos")
 	public String todosLosTalleres(Model model) {
 		model.addAttribute("listaTalleres", listaTaller);
+		return "/taller/todos";
+	}
 
+	@GetMapping("/tipo/{tipo}")
+	public String filtroTalleres(Model model, @PathVariable String tipo) {
+		model.addAttribute("listaTalleres", talleresFiltrados(tipo));
+		model.addAttribute("tipo", tipo);
 		return "/taller/todos";
 	}
 }

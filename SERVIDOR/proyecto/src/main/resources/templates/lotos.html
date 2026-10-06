@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Loterías</h1>
+	<p th:if="${listaLotos == null || listaLotos.size == 0}">No hay talleres</p>
+	<table th:if="${listaLotos != null || listaLotos.size != 0}">
+		<thead>
+			<tr>
+				<th>Lotería</th>
+				<th>Máximo</th>
+				<th>Cuántos números</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="loto : ${listaLotos}">
+				<td><a th:href="@{'/loto/genera/' + ${loto.max} + / + ${loto.total} + / ${loto.nombre}}" th:text="${loto.nombre}"></a></td>
+				<td th:text="${loto.max}"></td>
+				<td th:text="${loto.total}"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

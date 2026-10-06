@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Talleres</h1>
-	<table>
+	<h1 th:text="${tipo != null} ? |Talleres de tipo ${tipo}| : 'Todos los talleres'"></h1>
+	<p th:if="${listaTalleres == null || listaTalleres.size == 0}">No hay talleres</p>
+	<table th:if="${listaTalleres != null || listaTalleres.size != 0}">
 		<thead>
 			<tr>
 				<th>ID</th>
 				<th>NOMBRE</th>
 				<th>PLAZAS</th>
+				<th>TIPO</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr th:each="taller : ${listaTalleres}">
 				<td><a th:href="@{'/taller/uno/' + ${taller.id}}" th:text="${taller.id}"></a></td>
-				<td th:text="${taller.getNombre()}"></td>
-				<td th:text="${taller.getPlazas()}"></td>
+				<td th:text="${taller.nombre}"></td>
+				<td th:text="${taller.plazas}"></td>
+				<td>
+				<a th:href="@{'/taller/tipo/' + ${taller.tipo}}" th:text="${taller.tipo}"></a>
+				</td>
 			</tr>
 		</tbody>
 	</table>

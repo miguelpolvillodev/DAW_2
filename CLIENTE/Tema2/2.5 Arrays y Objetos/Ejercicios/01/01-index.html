@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const arr = [2,3,4,5,0]
+    let suma = 0;
+    let nuevoArray = new Array();
+   
+
+    arr.forEach(function e(e,index) {
+        suma = e + suma;
+        nuevoArray[index] = e * 3
+        
+    });
+
+    const newArr = arr.map(el => el * 3);
+    let media = suma/arr.length;
+
+     console.log("Suma del array: ",suma);
+     console.log("Media del array:", media);
+     console.log(`Nuevo Array x3: ${newArr}`);
+     console.log(`Mismo array triple: ${nuevoArray}`)
+</script>
+<body>
+    
+</body>
+</html>

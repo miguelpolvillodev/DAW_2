@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 th:if="${acierto}">¡Correcto!</h1>
+<h1 th:unless="${acierto}">Incorrecto</h1>
+<p th:text="'Era ' + ${correcta.nombre}"></p>
+<a th:href="@{/imagenes/quiz}">Jugar otra vez</a>
+</body>
+</html>

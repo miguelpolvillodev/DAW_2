@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p th:if="${libro == null}" th:text="'No existe el libro con id ' + ${idBuscado}"></p>
+
+	<ul th:if=" ${libro != null}">
+		<li th:text="'Titulo: ' + ${libro.titulo}"></li>
+		<li th:text="'Autor: ' +${libro.autor}"></li>
+		<li th:text="'Ejemplares: ' +${libro.n_ejemplares}"></li>
+		<li th:text="'Género: ' +${libro.genero}"></li>
+	</ul>
+
+</body>
+</html>

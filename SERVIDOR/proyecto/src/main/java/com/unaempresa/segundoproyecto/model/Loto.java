@@ -2,18 +2,18 @@ package com.unaempresa.segundoproyecto.model;
 
 public class Loto {
 
-	private String nombre;
+	private String pais;
 	private Integer max;
 	private Integer total;
 	
-	public Loto(String nombre, Integer max, Integer total) {
-		this.nombre = nombre;
+	public Loto(String pais, Integer max, Integer total) {
+		this.pais = pais;
 		this.max = max;
 		this.total = total;
 	}
 
 	public String getNombre() {
-		return nombre;
+		return pais;
 	}
 
 	public Integer getMax() {

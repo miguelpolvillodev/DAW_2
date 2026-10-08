@@ -18,7 +18,7 @@
 		</thead>
 		<tbody>
 			<tr th:each="loto : ${listaLotos}">
-				<td><a th:href="@{'/loto/genera/' + ${loto.max} + / + ${loto.total} + / ${loto.nombre}}" th:text="${loto.nombre}"></a></td>
+				<td><a th:href="@{'/loto/genera/' + ${loto.max} +'/' + ${loto.total} + '/' + ${loto.nombre}}" th:text="${loto.nombre}"></a></td>
 				<td th:text="${loto.max}"></td>
 				<td th:text="${loto.total}"></td>
 			</tr>

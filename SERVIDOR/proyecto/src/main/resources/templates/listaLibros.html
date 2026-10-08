@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Lista libros</h1>
+	<p th:if="${listaLibros == null || listaLibros.size == 0}">No hay
+		talleres</p>
+	<table th:if="${listaLibros != null || listaLibros.size != 0}">
+		<thead>
+			<tr>
+				<th>Titulo</th>
+				<th>Autor</th>
+				<th>Ejemplares</th>
+				<th>Género</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="libro : ${listaLibros}">
+				<td ><a th:text=${libro.titulo}
+				th:href="@{'/libros/id/' + ${libro.id}}"></a></td>
+				<td th:text="${libro.autor}"></td>
+				<td th:text="${libro.n_ejemplares}"></td>
+				<td><a th:text="${libro.genero}"
+					th:href="@{'/libros/genero/' + ${libro.genero}}"></a></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

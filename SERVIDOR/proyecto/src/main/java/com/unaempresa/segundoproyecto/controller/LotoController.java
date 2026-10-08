@@ -29,8 +29,18 @@ public class LotoController {
 		return ts;
 	}
 
-	private List<Loto> generarCombinacion(List<Loto> lista) {
-		
+	private List<Integer> generarCombinacion(int max, int cantidad) {
+		Random random = new Random();
+		List<Integer> combinacion = new ArrayList<>();
+
+		while (combinacion.size() < cantidad) {
+			int numero = random.nextInt(max) + 1;
+			if (!combinacion.contains(numero)) {
+				combinacion.add(numero);
+			}
+		}
+		combinacion.sort(null);
+		return combinacion;
 	}
 
 	@GetMapping("/menu")
@@ -39,12 +49,13 @@ public class LotoController {
 		return "lotos";
 	}
 
-	@GetMapping("loto/genera/{max}/{total}/{pais}")
+	@GetMapping("/genera/{max}/{total}/{pais}")
 	public String combinacion(Model model, @PathVariable Integer max, @PathVariable Integer total,
-			@PathVariable String nombre) {
-		
-		model.addAttribute("premio", generarCombinacion(listaLotos));
+			@PathVariable String pais) {
 
+		model.addAttribute("pais", pais);
+		model.addAttribute("combinacion", generarCombinacion(max, total));
 		return "generador";
 	}
+
 }

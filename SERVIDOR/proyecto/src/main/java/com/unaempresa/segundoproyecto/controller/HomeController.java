@@ -36,7 +36,7 @@ public class HomeController {
 		String proverbioElegido;
 		Random random = new Random();
 
-		proverbioElegido = proverbios.get(random.nextInt(0, 11));
+		proverbioElegido = proverbios.get(random.nextInt(0, 10));
 
 		return proverbioElegido;
 	}

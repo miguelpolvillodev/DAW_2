@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<img th:src="${correcta.url}"/>
+<a th:each="c : ${opciones}"
+   th:href="@{'/imagenes/respuesta/' +${correcta.id} + '/' +'${c.id}'}"
+   th:text="${c.nombre}"></a>
+</body>
+</html>

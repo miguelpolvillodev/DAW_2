@@ -7,7 +7,7 @@
 <body>
 <img th:src="${correcta.url}"/>
 <a th:each="c : ${opciones}"
-   th:href="@{'/imagenes/respuesta/' +${correcta.id} + '/' +'${c.id}'}"
+   th:href="@{'/imagenes/respuesta/' +${correcta.id} + '/' +${c.id}}"
    th:text="${c.nombre}"></a>
 </body>
 </html>

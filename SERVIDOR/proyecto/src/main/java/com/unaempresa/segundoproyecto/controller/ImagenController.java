@@ -23,9 +23,9 @@ public class ImagenController {
 	public List<Ciudad> importarCiudades() {
 		List<Ciudad> listaImportada = new ArrayList<>();
 		listaImportada.add(new Ciudad("Sevilla", "/img/sevilla.jpg"));
-		listaImportada.add(new Ciudad("Madrid", "/img/madrid.jpg"));
+		listaImportada.add(new Ciudad("Madrid", "/img/madrid.jpeg"));
 		listaImportada.add(new Ciudad("Barcelona", "/img/barcelona.jpg"));
-		listaImportada.add(new Ciudad("Valencia", "/img/valencia.jpg"));
+		listaImportada.add(new Ciudad("Valencia", "/img/valencia.jpeg"));
 		listaImportada.add(new Ciudad("Granada", "/img/granada.jpg"));
 
 		return listaImportada;

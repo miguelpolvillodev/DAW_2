@@ -7,9 +7,8 @@ import java.util.Random;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("/")
+
 @Controller
 public class HomeController {
 
@@ -32,7 +31,7 @@ public class HomeController {
 		return ts;
 	}
 
-	public String randomProverbio(List<String> proverbios) {
+	public String randomProverbio() {
 		String proverbioElegido;
 		Random random = new Random();
 
@@ -41,9 +40,9 @@ public class HomeController {
 		return proverbioElegido;
 	}
 
-	@GetMapping("/home")
+	@GetMapping({"/","/home"})
 	public String mostrarProverbios(Model model) {
-		model.addAttribute("proverbio", randomProverbio(proverbios));
+		model.addAttribute("proverbio", randomProverbio());
 		return "home";
 	}
 

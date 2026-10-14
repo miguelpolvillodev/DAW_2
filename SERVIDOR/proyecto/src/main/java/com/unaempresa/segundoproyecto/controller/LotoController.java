@@ -1,6 +1,7 @@
 package com.unaempresa.segundoproyecto.controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -34,12 +35,12 @@ public class LotoController {
 		List<Integer> combinacion = new ArrayList<>();
 
 		while (combinacion.size() < cantidad) {
-			int numero = random.nextInt(max) + 1;
+			int numero = random.nextInt(1,max);
 			if (!combinacion.contains(numero)) {
 				combinacion.add(numero);
 			}
 		}
-		combinacion.sort(null);
+		Collections.sort(combinacion);
 		return combinacion;
 	}
 

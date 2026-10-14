@@ -1,0 +1,570 @@
+[
+    {
+        "label": "EstadoAula",
+        "importPath": "aula.dominio.modelos",
+        "description": "aula.dominio.modelos",
+        "isExtraImport": true,
+        "detail": "aula.dominio.modelos",
+        "documentation": {}
+    },
+    {
+        "label": "Alumno",
+        "importPath": "aula.dominio.modelos",
+        "description": "aula.dominio.modelos",
+        "isExtraImport": true,
+        "detail": "aula.dominio.modelos",
+        "documentation": {}
+    },
+    {
+        "label": "EstadoAula",
+        "importPath": "aula.dominio.modelos",
+        "description": "aula.dominio.modelos",
+        "isExtraImport": true,
+        "detail": "aula.dominio.modelos",
+        "documentation": {}
+    },
+    {
+        "label": "EstadoAula",
+        "importPath": "aula.dominio.modelos",
+        "description": "aula.dominio.modelos",
+        "isExtraImport": true,
+        "detail": "aula.dominio.modelos",
+        "documentation": {}
+    },
+    {
+        "label": "Material",
+        "importPath": "aula.dominio.modelos",
+        "description": "aula.dominio.modelos",
+        "isExtraImport": true,
+        "detail": "aula.dominio.modelos",
+        "documentation": {}
+    },
+    {
+        "label": "EstadoAula",
+        "importPath": "aula.dominio.modelos",
+        "description": "aula.dominio.modelos",
+        "isExtraImport": true,
+        "detail": "aula.dominio.modelos",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "EntidadInexistenteError",
+        "importPath": "aula.dominio.errores",
+        "description": "aula.dominio.errores",
+        "isExtraImport": true,
+        "detail": "aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "NombreInvalidoError",
+        "importPath": "aula.dominio.errores",
+        "description": "aula.dominio.errores",
+        "isExtraImport": true,
+        "detail": "aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "CantidadInvalidaError",
+        "importPath": "aula.dominio.errores",
+        "description": "aula.dominio.errores",
+        "isExtraImport": true,
+        "detail": "aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "EntidadInexistenteError",
+        "importPath": "aula.dominio.errores",
+        "description": "aula.dominio.errores",
+        "isExtraImport": true,
+        "detail": "aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "MaterialDuplicadoError",
+        "importPath": "aula.dominio.errores",
+        "description": "aula.dominio.errores",
+        "isExtraImport": true,
+        "detail": "aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "NombreInvalidoError",
+        "importPath": "aula.dominio.errores",
+        "description": "aula.dominio.errores",
+        "isExtraImport": true,
+        "detail": "aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "crear_estado_inicial",
+        "importPath": "aula.datos.memoria",
+        "description": "aula.datos.memoria",
+        "isExtraImport": true,
+        "detail": "aula.datos.memoria",
+        "documentation": {}
+    },
+    {
+        "label": "crear_material",
+        "importPath": "prestamos_aula.aula.servicios.materiales",
+        "description": "prestamos_aula.aula.servicios.materiales",
+        "isExtraImport": true,
+        "detail": "prestamos_aula.aula.servicios.materiales",
+        "documentation": {}
+    },
+    {
+        "label": "listar_materiales",
+        "importPath": "prestamos_aula.aula.servicios.materiales",
+        "description": "prestamos_aula.aula.servicios.materiales",
+        "isExtraImport": true,
+        "detail": "prestamos_aula.aula.servicios.materiales",
+        "documentation": {}
+    },
+    {
+        "label": "ErrorAula",
+        "importPath": "prestamos_aula.aula.dominio.errores",
+        "description": "prestamos_aula.aula.dominio.errores",
+        "isExtraImport": true,
+        "detail": "prestamos_aula.aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "nota_teorica",
+        "kind": 5,
+        "importPath": "Introduccion.nota_media",
+        "description": "Introduccion.nota_media",
+        "peekOfCode": "nota_teorica = float(input(\"Introduce tu nota teórica: \"))\nnota_practica = float(input(\"Introduce tu nota práctica: \"))\nnota_final = (nota_teorica + nota_practica) / 2\nprint(\"La nota media obtenida es: \", nota_final)",
+        "detail": "Introduccion.nota_media",
+        "documentation": {}
+    },
+    {
+        "label": "nota_practica",
+        "kind": 5,
+        "importPath": "Introduccion.nota_media",
+        "description": "Introduccion.nota_media",
+        "peekOfCode": "nota_practica = float(input(\"Introduce tu nota práctica: \"))\nnota_final = (nota_teorica + nota_practica) / 2\nprint(\"La nota media obtenida es: \", nota_final)",
+        "detail": "Introduccion.nota_media",
+        "documentation": {}
+    },
+    {
+        "label": "nota_final",
+        "kind": 5,
+        "importPath": "Introduccion.nota_media",
+        "description": "Introduccion.nota_media",
+        "peekOfCode": "nota_final = (nota_teorica + nota_practica) / 2\nprint(\"La nota media obtenida es: \", nota_final)",
+        "detail": "Introduccion.nota_media",
+        "documentation": {}
+    },
+    {
+        "label": "nombre_app",
+        "kind": 5,
+        "importPath": "Introduccion.proyecto_web",
+        "description": "Introduccion.proyecto_web",
+        "peekOfCode": "nombre_app = \"App nueva\"\nversion = 2.1\nmodulos_totales = 4\nen_produccion = True \nprint(\"Nombre App:\",nombre_app,\"Version:\",version,\"Modulos\",modulos_totales,\"En produccion\",en_produccion)\nprint(\"Tipo de variable de version:\",type(version),\"Tipo de variable de produccion:\",type(en_produccion))\ndato = \"100\"\ndato = 100\nprint(type(dato))\n#Input -> Escribir por consola devuelve str // casteos -> int(x), float(x)...",
+        "detail": "Introduccion.proyecto_web",
+        "documentation": {}
+    },
+    {
+        "label": "version",
+        "kind": 5,
+        "importPath": "Introduccion.proyecto_web",
+        "description": "Introduccion.proyecto_web",
+        "peekOfCode": "version = 2.1\nmodulos_totales = 4\nen_produccion = True \nprint(\"Nombre App:\",nombre_app,\"Version:\",version,\"Modulos\",modulos_totales,\"En produccion\",en_produccion)\nprint(\"Tipo de variable de version:\",type(version),\"Tipo de variable de produccion:\",type(en_produccion))\ndato = \"100\"\ndato = 100\nprint(type(dato))\n#Input -> Escribir por consola devuelve str // casteos -> int(x), float(x)...\nlenguaje = input(\"Lenguaje principal: \")",
+        "detail": "Introduccion.proyecto_web",
+        "documentation": {}
+    },
+    {
+        "label": "modulos_totales",
+        "kind": 5,
+        "importPath": "Introduccion.proyecto_web",
+        "description": "Introduccion.proyecto_web",
+        "peekOfCode": "modulos_totales = 4\nen_produccion = True \nprint(\"Nombre App:\",nombre_app,\"Version:\",version,\"Modulos\",modulos_totales,\"En produccion\",en_produccion)\nprint(\"Tipo de variable de version:\",type(version),\"Tipo de variable de produccion:\",type(en_produccion))\ndato = \"100\"\ndato = 100\nprint(type(dato))\n#Input -> Escribir por consola devuelve str // casteos -> int(x), float(x)...\nlenguaje = input(\"Lenguaje principal: \")\nprint(\"Has elegido:\",lenguaje)",
+        "detail": "Introduccion.proyecto_web",
+        "documentation": {}
+    },
+    {
+        "label": "en_produccion",
+        "kind": 5,
+        "importPath": "Introduccion.proyecto_web",
+        "description": "Introduccion.proyecto_web",
+        "peekOfCode": "en_produccion = True \nprint(\"Nombre App:\",nombre_app,\"Version:\",version,\"Modulos\",modulos_totales,\"En produccion\",en_produccion)\nprint(\"Tipo de variable de version:\",type(version),\"Tipo de variable de produccion:\",type(en_produccion))\ndato = \"100\"\ndato = 100\nprint(type(dato))\n#Input -> Escribir por consola devuelve str // casteos -> int(x), float(x)...\nlenguaje = input(\"Lenguaje principal: \")\nprint(\"Has elegido:\",lenguaje)",
+        "detail": "Introduccion.proyecto_web",
+        "documentation": {}
+    },
+    {
+        "label": "dato",
+        "kind": 5,
+        "importPath": "Introduccion.proyecto_web",
+        "description": "Introduccion.proyecto_web",
+        "peekOfCode": "dato = \"100\"\ndato = 100\nprint(type(dato))\n#Input -> Escribir por consola devuelve str // casteos -> int(x), float(x)...\nlenguaje = input(\"Lenguaje principal: \")\nprint(\"Has elegido:\",lenguaje)",
+        "detail": "Introduccion.proyecto_web",
+        "documentation": {}
+    },
+    {
+        "label": "dato",
+        "kind": 5,
+        "importPath": "Introduccion.proyecto_web",
+        "description": "Introduccion.proyecto_web",
+        "peekOfCode": "dato = 100\nprint(type(dato))\n#Input -> Escribir por consola devuelve str // casteos -> int(x), float(x)...\nlenguaje = input(\"Lenguaje principal: \")\nprint(\"Has elegido:\",lenguaje)",
+        "detail": "Introduccion.proyecto_web",
+        "documentation": {}
+    },
+    {
+        "label": "lenguaje",
+        "kind": 5,
+        "importPath": "Introduccion.proyecto_web",
+        "description": "Introduccion.proyecto_web",
+        "peekOfCode": "lenguaje = input(\"Lenguaje principal: \")\nprint(\"Has elegido:\",lenguaje)",
+        "detail": "Introduccion.proyecto_web",
+        "documentation": {}
+    },
+    {
+        "label": "nombre",
+        "kind": 5,
+        "importPath": "Introduccion.registro_dev",
+        "description": "Introduccion.registro_dev",
+        "peekOfCode": "nombre = input(\"Introduce nombre: \")\naños_exp = int(input(\"Introduce años de experiencia: \"))\nhoras_diarias = float(input(\"Introduce horas diarias: \"))\nhoras_semanales = horas_diarias * 5\nprint(\"Horas semanales:\",horas_semanales)\nprint(type(horas_semanales))\nprint(type(nombre))\nprint(type(años_exp))\nprint(type(horas_diarias))",
+        "detail": "Introduccion.registro_dev",
+        "documentation": {}
+    },
+    {
+        "label": "años_exp",
+        "kind": 5,
+        "importPath": "Introduccion.registro_dev",
+        "description": "Introduccion.registro_dev",
+        "peekOfCode": "años_exp = int(input(\"Introduce años de experiencia: \"))\nhoras_diarias = float(input(\"Introduce horas diarias: \"))\nhoras_semanales = horas_diarias * 5\nprint(\"Horas semanales:\",horas_semanales)\nprint(type(horas_semanales))\nprint(type(nombre))\nprint(type(años_exp))\nprint(type(horas_diarias))",
+        "detail": "Introduccion.registro_dev",
+        "documentation": {}
+    },
+    {
+        "label": "horas_diarias",
+        "kind": 5,
+        "importPath": "Introduccion.registro_dev",
+        "description": "Introduccion.registro_dev",
+        "peekOfCode": "horas_diarias = float(input(\"Introduce horas diarias: \"))\nhoras_semanales = horas_diarias * 5\nprint(\"Horas semanales:\",horas_semanales)\nprint(type(horas_semanales))\nprint(type(nombre))\nprint(type(años_exp))\nprint(type(horas_diarias))",
+        "detail": "Introduccion.registro_dev",
+        "documentation": {}
+    },
+    {
+        "label": "horas_semanales",
+        "kind": 5,
+        "importPath": "Introduccion.registro_dev",
+        "description": "Introduccion.registro_dev",
+        "peekOfCode": "horas_semanales = horas_diarias * 5\nprint(\"Horas semanales:\",horas_semanales)\nprint(type(horas_semanales))\nprint(type(nombre))\nprint(type(años_exp))\nprint(type(horas_diarias))",
+        "detail": "Introduccion.registro_dev",
+        "documentation": {}
+    },
+    {
+        "label": "rol",
+        "kind": 5,
+        "importPath": "Introduccion.validador_acceso",
+        "description": "Introduccion.validador_acceso",
+        "peekOfCode": "rol = input(\"Dime tu rol: \")\nantiguedad_meses = int(input(\"Dime tu antiguedad en meses: \"))\nrespuesta_super = input(\"Eres superusuario? s/n\")\nif respuesta_super.__contains__(\"s\") or rol == \"admin\" and antiguedad_meses >=12 :\n    permiso = True \nelse : \n    permiso = False \nprint(\"Super usuario: \",permiso)",
+        "detail": "Introduccion.validador_acceso",
+        "documentation": {}
+    },
+    {
+        "label": "antiguedad_meses",
+        "kind": 5,
+        "importPath": "Introduccion.validador_acceso",
+        "description": "Introduccion.validador_acceso",
+        "peekOfCode": "antiguedad_meses = int(input(\"Dime tu antiguedad en meses: \"))\nrespuesta_super = input(\"Eres superusuario? s/n\")\nif respuesta_super.__contains__(\"s\") or rol == \"admin\" and antiguedad_meses >=12 :\n    permiso = True \nelse : \n    permiso = False \nprint(\"Super usuario: \",permiso)",
+        "detail": "Introduccion.validador_acceso",
+        "documentation": {}
+    },
+    {
+        "label": "respuesta_super",
+        "kind": 5,
+        "importPath": "Introduccion.validador_acceso",
+        "description": "Introduccion.validador_acceso",
+        "peekOfCode": "respuesta_super = input(\"Eres superusuario? s/n\")\nif respuesta_super.__contains__(\"s\") or rol == \"admin\" and antiguedad_meses >=12 :\n    permiso = True \nelse : \n    permiso = False \nprint(\"Super usuario: \",permiso)",
+        "detail": "Introduccion.validador_acceso",
+        "documentation": {}
+    },
+    {
+        "label": "nombre_app",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "nombre_app = str(input(\"Introduce el nombre de al App: \"))\nentorno_destino = str(input(\"Introduce el entorno de destino: \"))\nram = int(input(\"Introduce GB de memora RAM: \"))\nlatencia = float(input(\"Introduce los ms: \"))\nmax_euros_diarios =float(input(\"Introduce el máximo de euros diarios: \"))\nrespuesta_ssl= str(input(\"Está activo el certificado?: S/N\"))\nssl_activo = respuesta_ssl == \"s\"\n#3 Operaciones aritmeticas\ncoste_hora = max_euros_diarios / 24\ntotales = 1050",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "entorno_destino",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "entorno_destino = str(input(\"Introduce el entorno de destino: \"))\nram = int(input(\"Introduce GB de memora RAM: \"))\nlatencia = float(input(\"Introduce los ms: \"))\nmax_euros_diarios =float(input(\"Introduce el máximo de euros diarios: \"))\nrespuesta_ssl= str(input(\"Está activo el certificado?: S/N\"))\nssl_activo = respuesta_ssl == \"s\"\n#3 Operaciones aritmeticas\ncoste_hora = max_euros_diarios / 24\ntotales = 1050\ncontenedor = 100",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "ram",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "ram = int(input(\"Introduce GB de memora RAM: \"))\nlatencia = float(input(\"Introduce los ms: \"))\nmax_euros_diarios =float(input(\"Introduce el máximo de euros diarios: \"))\nrespuesta_ssl= str(input(\"Está activo el certificado?: S/N\"))\nssl_activo = respuesta_ssl == \"s\"\n#3 Operaciones aritmeticas\ncoste_hora = max_euros_diarios / 24\ntotales = 1050\ncontenedor = 100\nse_llenaran = totales // contenedor ",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "latencia",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "latencia = float(input(\"Introduce los ms: \"))\nmax_euros_diarios =float(input(\"Introduce el máximo de euros diarios: \"))\nrespuesta_ssl= str(input(\"Está activo el certificado?: S/N\"))\nssl_activo = respuesta_ssl == \"s\"\n#3 Operaciones aritmeticas\ncoste_hora = max_euros_diarios / 24\ntotales = 1050\ncontenedor = 100\nse_llenaran = totales // contenedor \nexceso = totales % contenedor",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "ssl_activo",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "ssl_activo = respuesta_ssl == \"s\"\n#3 Operaciones aritmeticas\ncoste_hora = max_euros_diarios / 24\ntotales = 1050\ncontenedor = 100\nse_llenaran = totales // contenedor \nexceso = totales % contenedor\n#4 Evaluacion de expresiones\ndespliegue_true = entorno_destino == \"produccion\" and ram>=8 and latencia <=50.0 and ssl_activo == True or (entorno_destino != \"produccion\") and ram >=2\n#5 Salida formateada",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "coste_hora",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "coste_hora = max_euros_diarios / 24\ntotales = 1050\ncontenedor = 100\nse_llenaran = totales // contenedor \nexceso = totales % contenedor\n#4 Evaluacion de expresiones\ndespliegue_true = entorno_destino == \"produccion\" and ram>=8 and latencia <=50.0 and ssl_activo == True or (entorno_destino != \"produccion\") and ram >=2\n#5 Salida formateada\nprint(\"Nombre de la App: \", nombre_app)\nprint(\"Entorno de destino: \", entorno_destino)",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "totales",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "totales = 1050\ncontenedor = 100\nse_llenaran = totales // contenedor \nexceso = totales % contenedor\n#4 Evaluacion de expresiones\ndespliegue_true = entorno_destino == \"produccion\" and ram>=8 and latencia <=50.0 and ssl_activo == True or (entorno_destino != \"produccion\") and ram >=2\n#5 Salida formateada\nprint(\"Nombre de la App: \", nombre_app)\nprint(\"Entorno de destino: \", entorno_destino)\nprint(\"Memoria Ram: \", ram)",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "contenedor",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "contenedor = 100\nse_llenaran = totales // contenedor \nexceso = totales % contenedor\n#4 Evaluacion de expresiones\ndespliegue_true = entorno_destino == \"produccion\" and ram>=8 and latencia <=50.0 and ssl_activo == True or (entorno_destino != \"produccion\") and ram >=2\n#5 Salida formateada\nprint(\"Nombre de la App: \", nombre_app)\nprint(\"Entorno de destino: \", entorno_destino)\nprint(\"Memoria Ram: \", ram)\nprint(\"Latencia: \", latencia)",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "se_llenaran",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "se_llenaran = totales // contenedor \nexceso = totales % contenedor\n#4 Evaluacion de expresiones\ndespliegue_true = entorno_destino == \"produccion\" and ram>=8 and latencia <=50.0 and ssl_activo == True or (entorno_destino != \"produccion\") and ram >=2\n#5 Salida formateada\nprint(\"Nombre de la App: \", nombre_app)\nprint(\"Entorno de destino: \", entorno_destino)\nprint(\"Memoria Ram: \", ram)\nprint(\"Latencia: \", latencia)\nprint(\"Coste hora: \", coste_hora)",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "exceso",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "exceso = totales % contenedor\n#4 Evaluacion de expresiones\ndespliegue_true = entorno_destino == \"produccion\" and ram>=8 and latencia <=50.0 and ssl_activo == True or (entorno_destino != \"produccion\") and ram >=2\n#5 Salida formateada\nprint(\"Nombre de la App: \", nombre_app)\nprint(\"Entorno de destino: \", entorno_destino)\nprint(\"Memoria Ram: \", ram)\nprint(\"Latencia: \", latencia)\nprint(\"Coste hora: \", coste_hora)\nprint(\"Contenedores llenos: \", se_llenaran)",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "despliegue_true",
+        "kind": 5,
+        "importPath": "Practicas.Practica 1.deploy_validator",
+        "description": "Practicas.Practica 1.deploy_validator",
+        "peekOfCode": "despliegue_true = entorno_destino == \"produccion\" and ram>=8 and latencia <=50.0 and ssl_activo == True or (entorno_destino != \"produccion\") and ram >=2\n#5 Salida formateada\nprint(\"Nombre de la App: \", nombre_app)\nprint(\"Entorno de destino: \", entorno_destino)\nprint(\"Memoria Ram: \", ram)\nprint(\"Latencia: \", latencia)\nprint(\"Coste hora: \", coste_hora)\nprint(\"Contenedores llenos: \", se_llenaran)\nprint(\"Exceso de contenedores: \", exceso)\nprint(\"Indicador de certificado SSL activo\", ssl_activo)",
+        "detail": "Practicas.Practica 1.deploy_validator",
+        "documentation": {}
+    },
+    {
+        "label": "crear_estado_inicial",
+        "kind": 2,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.datos.memoria",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.datos.memoria",
+        "peekOfCode": "def crear_estado_inicial() -> EstadoAula:\n    return {\n        \"materiales\":{\n            \"MAT001\": {\"nombre\": \"Portátil\", \"total\": 5, \"disponible\":5},\n            \"MAT002\":{\"nombre\": \"Portátil\", \"total\": 5, \"disponible\":5}\n        },\n        \"alumnos\": {\n            \"AL001\": {\"nombre\":\"Ana\",\"estado\":True},\n            \"AL002\": {\"nombre\":\"Luis\",\"estado\":True}\n        },",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.datos.memoria",
+        "documentation": {}
+    },
+    {
+        "label": "ErrorAula",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "peekOfCode": "class ErrorAula(Exception):\n    \"\"\"Base de los errores previstos de la aplicacion\"\"\"\nclass NombreInvalidoError(ErrorAula):\n    pass\nclass CantidadInvalidaError(ErrorAula):\n    pass \nclass MaterialDuplicadoError(ErrorAula):\n    pass\nclass EntidadInexistenteError(ErrorAula):\n    def __init__(self, tipo: str, identificador: str):",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "NombreInvalidoError",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "peekOfCode": "class NombreInvalidoError(ErrorAula):\n    pass\nclass CantidadInvalidaError(ErrorAula):\n    pass \nclass MaterialDuplicadoError(ErrorAula):\n    pass\nclass EntidadInexistenteError(ErrorAula):\n    def __init__(self, tipo: str, identificador: str):\n        self.tipo: str = tipo\n        self.identificador: str = identificador",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "CantidadInvalidaError",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "peekOfCode": "class CantidadInvalidaError(ErrorAula):\n    pass \nclass MaterialDuplicadoError(ErrorAula):\n    pass\nclass EntidadInexistenteError(ErrorAula):\n    def __init__(self, tipo: str, identificador: str):\n        self.tipo: str = tipo\n        self.identificador: str = identificador\n        super().__init__(f\"No existe {tipo} con identificador {identificador}\")\nclass StockInsuficienteError(ErrorAula):",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "MaterialDuplicadoError",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "peekOfCode": "class MaterialDuplicadoError(ErrorAula):\n    pass\nclass EntidadInexistenteError(ErrorAula):\n    def __init__(self, tipo: str, identificador: str):\n        self.tipo: str = tipo\n        self.identificador: str = identificador\n        super().__init__(f\"No existe {tipo} con identificador {identificador}\")\nclass StockInsuficienteError(ErrorAula):\n    def __init__(self, disponible: int, solicitados: int):\n        self.disponible: int = disponible",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "EntidadInexistenteError",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "peekOfCode": "class EntidadInexistenteError(ErrorAula):\n    def __init__(self, tipo: str, identificador: str):\n        self.tipo: str = tipo\n        self.identificador: str = identificador\n        super().__init__(f\"No existe {tipo} con identificador {identificador}\")\nclass StockInsuficienteError(ErrorAula):\n    def __init__(self, disponible: int, solicitados: int):\n        self.disponible: int = disponible\n        self.solicitados: int = solicitados\n        super().__init__(f\"Solicitadas {solicitados} unidades, pero solo hay {disponible} disponibles\")",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "StockInsuficienteError",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "peekOfCode": "class StockInsuficienteError(ErrorAula):\n    def __init__(self, disponible: int, solicitados: int):\n        self.disponible: int = disponible\n        self.solicitados: int = solicitados\n        super().__init__(f\"Solicitadas {solicitados} unidades, pero solo hay {disponible} disponibles\")\nclass AlumnoInactivoError(ErrorAula):\n    pass\nclass DevolucionExcesivaError(ErrorAula):\n    def __init__(self, pendientes: int, devueltas: int):\n            self.pendientes: int = pendientes",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "AlumnoInactivoError",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "peekOfCode": "class AlumnoInactivoError(ErrorAula):\n    pass\nclass DevolucionExcesivaError(ErrorAula):\n    def __init__(self, pendientes: int, devueltas: int):\n            self.pendientes: int = pendientes\n            self.devueltas: int = devueltas\n            super().__init__(f\"Intenas devolver {devueltas} unidades, pero solo quedan {pendientes} disponibles\")",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "DevolucionExcesivaError",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "peekOfCode": "class DevolucionExcesivaError(ErrorAula):\n    def __init__(self, pendientes: int, devueltas: int):\n            self.pendientes: int = pendientes\n            self.devueltas: int = devueltas\n            super().__init__(f\"Intenas devolver {devueltas} unidades, pero solo quedan {pendientes} disponibles\")",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.errores",
+        "documentation": {}
+    },
+    {
+        "label": "Material",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "peekOfCode": "class Material(TypedDict):\n    nombre: str\n    total: int\n    disponible: int\nmi_material: Material = {\"nombre\": \"portatil\", \"total\": 5, \"disponible\": 5}\nclass Alumno(TypedDict):\n    nombre: str\n    activo: bool\nmi_alumno: Alumno = {\"nombre\": \"Miguel\", \"activo\": True}\nclass Prestamo(TypedDict):",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "documentation": {}
+    },
+    {
+        "label": "Alumno",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "peekOfCode": "class Alumno(TypedDict):\n    nombre: str\n    activo: bool\nmi_alumno: Alumno = {\"nombre\": \"Miguel\", \"activo\": True}\nclass Prestamo(TypedDict):\n    alumno_id: str\n    material_id: str\n    cantidad: int\n    pendientes: int\nclass EstadoAula(TypedDict):",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "documentation": {}
+    },
+    {
+        "label": "Prestamo",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "peekOfCode": "class Prestamo(TypedDict):\n    alumno_id: str\n    material_id: str\n    cantidad: int\n    pendientes: int\nclass EstadoAula(TypedDict):\n    materiales: dict[str, Material]\n    alumnos: dict[str, Alumno]\n    prestamos: dict[str, Prestamo]\n    siguiente_material: int",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "documentation": {}
+    },
+    {
+        "label": "EstadoAula",
+        "kind": 6,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "peekOfCode": "class EstadoAula(TypedDict):\n    materiales: dict[str, Material]\n    alumnos: dict[str, Alumno]\n    prestamos: dict[str, Prestamo]\n    siguiente_material: int\n    siguiente_alumno: int\n    siguiente_prestamo: int",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.dominio.modelos",
+        "documentation": {}
+    },
+    {
+        "label": "listar_alumnos",
+        "kind": 2,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.servicios.alumnos",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.servicios.alumnos",
+        "peekOfCode": "def listar_alumnos(estado: EstadoAula) -> list[tuple[str, Alumno]]:\n    return list(estado[\"alumnos\"].items())\ndef obtener_alumno(estado: EstadoAula, alumno_id: str) -> Alumno:\n    alumno: Alumno | None = estado[\"alumnos\"].get(alumno_id)\n    if alumno is None:\n        raise EntidadInexistenteError(f\"No se encuentra el alumno {alumno_id}\")\n    return alumno\ndef crear_alumno(estado: EstadoAula, nombre: str, activo: bool) -> str:\n    nombre_limpio: str = nombre.strip()\n    if not nombre_limpio:",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.servicios.alumnos",
+        "documentation": {}
+    },
+    {
+        "label": "obtener_alumno",
+        "kind": 2,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.servicios.alumnos",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.servicios.alumnos",
+        "peekOfCode": "def obtener_alumno(estado: EstadoAula, alumno_id: str) -> Alumno:\n    alumno: Alumno | None = estado[\"alumnos\"].get(alumno_id)\n    if alumno is None:\n        raise EntidadInexistenteError(f\"No se encuentra el alumno {alumno_id}\")\n    return alumno\ndef crear_alumno(estado: EstadoAula, nombre: str, activo: bool) -> str:\n    nombre_limpio: str = nombre.strip()\n    if not nombre_limpio:\n        raise NombreInvalidoError(\"El nombre no puede estar vacío\")\n    alumno_id: str = f\"AL{estado['siguiente_alumno']:03d}\"",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.servicios.alumnos",
+        "documentation": {}
+    },
+    {
+        "label": "crear_alumno",
+        "kind": 2,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.servicios.alumnos",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.servicios.alumnos",
+        "peekOfCode": "def crear_alumno(estado: EstadoAula, nombre: str, activo: bool) -> str:\n    nombre_limpio: str = nombre.strip()\n    if not nombre_limpio:\n        raise NombreInvalidoError(\"El nombre no puede estar vacío\")\n    alumno_id: str = f\"AL{estado['siguiente_alumno']:03d}\"\n    estado[\"alumnos\"][alumno_id] = {\"nombre\": nombre_limpio, \"activo\": True}\n    estado[\"siguiente_alumno\"] += 1\n    return alumno_id",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.servicios.alumnos",
+        "documentation": {}
+    },
+    {
+        "label": "listar_materiales",
+        "kind": 2,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.servicios.materiales",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.servicios.materiales",
+        "peekOfCode": "def listar_materiales(estado: EstadoAula) -> list[tuple[str, Material]]:\n    return list(estado[\"materiales\"].items())\ndef obtener_material(estado: EstadoAula, material_id: str) -> Material:\n    material: Material | None = estado[\"materiales\"].get(material_id)\n    if material is None:\n        raise EntidadInexistenteError(f\"No se encuentra el material {material_id}\")\n    return material\ndef crear_material(estado: EstadoAula, nombre: str, cantidad: int) -> str:\n    nombre_limpio: str = nombre.strip()\n    if not nombre_limpio:",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.servicios.materiales",
+        "documentation": {}
+    },
+    {
+        "label": "obtener_material",
+        "kind": 2,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.servicios.materiales",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.servicios.materiales",
+        "peekOfCode": "def obtener_material(estado: EstadoAula, material_id: str) -> Material:\n    material: Material | None = estado[\"materiales\"].get(material_id)\n    if material is None:\n        raise EntidadInexistenteError(f\"No se encuentra el material {material_id}\")\n    return material\ndef crear_material(estado: EstadoAula, nombre: str, cantidad: int) -> str:\n    nombre_limpio: str = nombre.strip()\n    if not nombre_limpio:\n        raise NombreInvalidoError(\"El nombre no puede estar vacío\")\n    if cantidad <= 0:",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.servicios.materiales",
+        "documentation": {}
+    },
+    {
+        "label": "crear_material",
+        "kind": 2,
+        "importPath": "Practicas.Practica 3.prestamos_aula.aula.servicios.materiales",
+        "description": "Practicas.Practica 3.prestamos_aula.aula.servicios.materiales",
+        "peekOfCode": "def crear_material(estado: EstadoAula, nombre: str, cantidad: int) -> str:\n    nombre_limpio: str = nombre.strip()\n    if not nombre_limpio:\n        raise NombreInvalidoError(\"El nombre no puede estar vacío\")\n    if cantidad <= 0:\n        raise CantidadInvalidaError(\"La cantidad debe ser un entero positivo\")\n    for existente in estado[\"materiales\"].values():\n        if existente[\"nombre\"].strip().casefold() == nombre_limpio.casefold():\n            raise MaterialDuplicadoError(f\"Ya existe el material {nombre_limpio}\")\n    material_id: str = f\"MAT{estado['siguiente_material']:03d}\"",
+        "detail": "Practicas.Practica 3.prestamos_aula.aula.servicios.materiales",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Practicas.Practica 3.prestamos_aula.main",
+        "description": "Practicas.Practica 3.prestamos_aula.main",
+        "peekOfCode": "def main() -> None:\n    estado: EstadoAula = crear_estado_inicial()\n    try:\n        material_id: str = crear_material(estado, \"Tablet\", 8)\n        print(\"Identificador del material creado\", material_id)\n        print(listar_materiales(estado))\n    except ErrorAula as error:\n        print(error)\n    try:\n        material2_id: str = crear_material(estado, \"TABLET\", 2)",
+        "detail": "Practicas.Practica 3.prestamos_aula.main",
+        "documentation": {}
+    }
+]

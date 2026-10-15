@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.unaempresa.segundoproyecto.model.Libro;
@@ -83,11 +84,35 @@ public class LibroController {
 	@GetMapping("/id/{id}")
 	public String filtroId(Model model, @PathVariable Integer id) {
 		Libro libro = filtroPorId(id);
-	    model.addAttribute("libro", libro);
-	    model.addAttribute("idBuscado", id);
-	    if (libro != null) {
-	        model.addAttribute("libroNombre", libro.getTitulo());
-	    }
-	    return "detalleLibro";
+		model.addAttribute("libro", libro);
+		model.addAttribute("idBuscado", id);
+		if (libro != null) {
+			model.addAttribute("libroNombre", libro.getTitulo());
+		}
+		return "detalleLibro";
+	}
+
+	@GetMapping("/nuevo")
+	public String nuevoLibro(Model model) {
+		model.addAttribute("libro", new Libro());
+		return "insertarLibro";
+	}
+
+	@PostMapping("/nuevo")
+	public String nuevoLibro(Libro l) {
+		System.out.println(listaLibros.size());
+
+		listaLibros.add(l);
+		System.out.println(listaLibros.get(25));
+
+		return "redirect:/libros/lista";
+	}
+	
+	@GetMapping("/borrar/{id}")
+	public String borrarLibro (@PathVariable Integer id) {
+		listaLibros.removeIf(l -> l.getId().equals(id));
+		System.out.println(id);
+		return "redirect:/libros/lista";
+
 	}
 }

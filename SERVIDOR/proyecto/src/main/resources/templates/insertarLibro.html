@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="POST" th:action="@{/libros/nuevo}" th:object="${libro}">
+
+<input type="text" name="titulo" th:field="*{titulo}" placeholder="Introducir titulo..."/> <br>
+<input type="text" name="autor" th:field="*{autor}" placeholder="Introducir autor..."/> <br>
+<input type="number" name="ejemplares" th:field="*{n_ejemplares}" placeholder="Introducir ejemplares..."/> <br>
+<input type="text" name="genero" th:field="*{genero}" placeholder="Introducir genero..."/> <br>
+<button>Enviar</button>
+
+</form>
+</body>
+</html>

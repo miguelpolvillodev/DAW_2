@@ -15,6 +15,7 @@
 				<th>Autor</th>
 				<th>Ejemplares</th>
 				<th>Género</th>
+				<th>Acciones</th>
 
 			</tr>
 		</thead>
@@ -26,6 +27,7 @@
 				<td th:text="${libro.n_ejemplares}"></td>
 				<td><a th:text="${libro.genero}"
 					th:href="@{'/libros/genero/' + ${libro.genero}}"></a></td>
+					<td><a th:href="@{/libros/borrar/{id}(id=${libro.id})}">Borrar</a><a>Editar</a></td>
 			</tr>
 		</tbody>
 	</table>

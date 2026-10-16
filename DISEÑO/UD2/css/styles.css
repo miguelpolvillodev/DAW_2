@@ -1,0 +1,12 @@
+@font-face {
+	font-family:'SF Pro Display';
+	font-style:normal;
+	font-weight:200;
+	src:url('/fonts/sf-pro-display_regular.woff2') format('woff2');
+}
+
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal
+}

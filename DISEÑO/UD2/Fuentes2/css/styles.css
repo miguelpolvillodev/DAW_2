@@ -1,0 +1,30 @@
+/* Fuente para h1 | Nube de google */
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+
+/* Fuente para p | Descargada en local */
+@font-face{
+    font-family: 'fuentelocal';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/Fuentes2/fonts/BigelowRules-Regular.ttf') format('truetype');
+
+}
+
+/* Estilos */
+.embed{
+ font-family: "Sancreek", sans-serif;
+}
+
+p{
+    font-family: 'fuentelocal', sans-serif;
+    font-size: 40px;
+}
+
+.fondo{
+    background-color: yellow;
+}
+
+.texto{
+    color:  #fff;
+}
+

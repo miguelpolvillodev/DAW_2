@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- CAMBIO -->
+<head>
+<meta charset="UTF-8">
+<title>Salas</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+<h1>Sala de reuniones</h1>
+
+
+<p>Planta:
+	<a th:href="@{/salas}">Todas</a>
+	<a th:href="@{/salas/planta/0}">0</a>
+	<a th:href="@{/salas/planta/1}">1</a>
+	<a th:href="@{/salas/planta/2}">2</a>
+</p>
+
+
+<table>
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Planta</th>
+			<th>Aforo</th>
+			<th>Estado</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="sala : ${listaSalas}">
+			<td><a th:href="@{/salas/{id}(id=${sala.id})}" th:text="${sala.nombre}"></a></td>
+			<td th:text="${sala.planta}"></td>
+			<td th:text="${sala.aforo}"></td>
+			<td th:text="${sala.estado}"></td>
+			<td>Editar</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

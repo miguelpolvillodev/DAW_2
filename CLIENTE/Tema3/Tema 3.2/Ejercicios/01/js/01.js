@@ -11,10 +11,7 @@ if(res){
 if(res2){
 document.getElementById("texto").style.color="orange";
 
-}else{
-    window.close()
 }
 }
-
 
 window.document.addEventListener("DOMContentLoaded", cargarPag);

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>06 · Productos</title>
+</head>
+<body>
+  <h2>Tienda</h2>
+  <form>
+    Categoría:
+    <select id="categoria">
+      <option value="todas">todas</option>
+      <option value="fruta">fruta</option>
+      <option value="bebida">bebida</option>
+      <option value="lacteo">lacteo</option>
+    </select>
+    <label><input type="checkbox" id="soloStock"> Solo con stock</label>
+    <button type="button" id="btnFiltrar">Filtrar</button>
+    <button type="button" id="btnOrdenar">Ordenar por precio</button>
+  </form>
+  <ul id="lista"></ul>
+  <div id="total"></div>
+  <script src="ejercicio.js"></script>
+</body>
+</html>

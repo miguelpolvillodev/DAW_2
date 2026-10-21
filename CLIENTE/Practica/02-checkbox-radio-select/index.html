@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>02 · Checkbox, radio y select</title>
+</head>
+<body>
+  <h2>Pedido</h2>
+  <form id="pedido">
+    <h4>Extras</h4>
+    <label><input type="checkbox" name="extra" value="10"> Queso (10)</label><br>
+    <label><input type="checkbox" name="extra" value="20"> Bacon (20)</label><br>
+    <label><input type="checkbox" name="extra" value="30"> Huevo (30)</label><br>
+    <label><input type="checkbox" name="extra" value="40"> Cebolla (40)</label><br>
+    <label><input type="checkbox" name="extra" value="50"> Salsa (50)</label><br>
+    <button type="button" id="btnSumar">Sumar</button>
+
+    <h4>Talla</h4>
+    <label><input type="radio" name="talla" value="S"> S</label>
+    <label><input type="radio" name="talla" value="M"> M</label>
+    <label><input type="radio" name="talla" value="L"> L</label>
+    <label><input type="radio" name="talla" value="XL"> XL</label><br>
+    <button type="button" id="btnTalla">Ver talla</button>
+
+    <h4>País</h4>
+    <select id="pais">
+      <option value="ES">España</option>
+      <option value="PT">Portugal</option>
+      <option value="FR">Francia</option>
+      <option value="IT">Italia</option>
+    </select>
+    <button type="button" id="btnPais">Ver país</button>
+
+    <h4>Aficiones (varias)</h4>
+    <select id="aficiones" multiple size="5">
+      <option value="m">Música</option>
+      <option value="c">Cine</option>
+      <option value="d">Deporte</option>
+      <option value="l">Lectura</option>
+      <option value="v">Videojuegos</option>
+    </select>
+    <button type="button" id="btnAficiones">Ver aficiones</button>
+
+    <h4>Condiciones</h4>
+    <label><input type="checkbox" id="acepto"> Acepto las condiciones</label>
+    <button type="button" id="btnMarcar">Marcar</button>
+    <button type="button" id="btnDesmarcar">Desmarcar</button>
+
+    <p><button type="button" id="btnEnviar">Enviar pedido</button></p>
+    <div id="mensaje"></div>
+  </form>
+  <script src="ejercicio.js"></script>
+</body>
+</html>

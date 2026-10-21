@@ -1,10 +1,12 @@
-from aula.dominio.errores import (
+from aula.dominio import (
     CantidadInvalidaError,
     EntidadInexistenteError,
+    EstadoAula,
+    Material,
     MaterialDuplicadoError,
     NombreInvalidoError,
 )
-from aula.dominio.modelos import EstadoAula, Material
+from aula.servicios.decoradores import registrar_operacion
 
 
 def listar_materiales(estado: EstadoAula) -> list[tuple[str, Material]]:
@@ -14,11 +16,13 @@ def listar_materiales(estado: EstadoAula) -> list[tuple[str, Material]]:
 def obtener_material(estado: EstadoAula, material_id: str) -> Material:
     material: Material | None = estado["materiales"].get(material_id)
     if material is None:
-        raise EntidadInexistenteError(f"No se encuentra el material {material_id}")
+        raise EntidadInexistenteError("material", material_id)
     return material
 
 
+@registrar_operacion
 def crear_material(estado: EstadoAula, nombre: str, cantidad: int) -> str:
+    """Da de alta un material con todas sus unidades disponibles."""
     nombre_limpio: str = nombre.strip()
     if not nombre_limpio:
         raise NombreInvalidoError("El nombre no puede estar vacío")

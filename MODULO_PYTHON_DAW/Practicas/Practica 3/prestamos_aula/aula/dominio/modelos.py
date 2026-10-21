@@ -4,18 +4,12 @@ from typing import TypedDict
 class Material(TypedDict):
     nombre: str
     total: int
-    disponible: int
-
-
-mi_material: Material = {"nombre": "portatil", "total": 5, "disponible": 5}
+    disponibles: int
 
 
 class Alumno(TypedDict):
     nombre: str
     activo: bool
-
-
-mi_alumno: Alumno = {"nombre": "Miguel", "activo": True}
 
 
 class Prestamo(TypedDict):
@@ -32,3 +26,13 @@ class EstadoAula(TypedDict):
     siguiente_material: int
     siguiente_alumno: int
     siguiente_prestamo: int
+
+
+class Resumen(TypedDict):
+    tipos_material: int
+    alumnos_registrados: int
+    unidades_totales: int
+    unidades_disponibles: int
+    unidades_prestadas: int
+    materiales_agotados: int
+    prestamos_pendientes: int

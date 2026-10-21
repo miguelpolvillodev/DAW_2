@@ -1,5 +1,5 @@
-from aula.dominio.errores import EntidadInexistenteError, NombreInvalidoError
-from aula.dominio.modelos import Alumno, EstadoAula
+from aula.dominio import Alumno, EntidadInexistenteError, EstadoAula, NombreInvalidoError
+from aula.servicios.decoradores import registrar_operacion
 
 
 def listar_alumnos(estado: EstadoAula) -> list[tuple[str, Alumno]]:
@@ -9,11 +9,13 @@ def listar_alumnos(estado: EstadoAula) -> list[tuple[str, Alumno]]:
 def obtener_alumno(estado: EstadoAula, alumno_id: str) -> Alumno:
     alumno: Alumno | None = estado["alumnos"].get(alumno_id)
     if alumno is None:
-        raise EntidadInexistenteError(f"No se encuentra el alumno {alumno_id}")
+        raise EntidadInexistenteError("alumno", alumno_id)
     return alumno
 
 
-def crear_alumno(estado: EstadoAula, nombre: str, activo: bool) -> str:
+@registrar_operacion
+def crear_alumno(estado: EstadoAula, nombre: str) -> str:
+    """Da de alta un alumno activo. Se permiten nombres repetidos."""
     nombre_limpio: str = nombre.strip()
     if not nombre_limpio:
         raise NombreInvalidoError("El nombre no puede estar vacío")

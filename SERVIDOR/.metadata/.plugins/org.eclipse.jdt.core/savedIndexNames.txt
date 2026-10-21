@@ -1,15 +1,9 @@
 INDEX VERSION 1.134+C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.jdt.core
-4104780467.index
-2382639587.index
-1925728888.index
-300796249.index
 1677631692.index
+1725274673.index
 1865797976.index
 2023717660.index
-41914766.index
-317845714.index
 546988330.index
-2343258257.index
 217802306.index
 3345936029.index
 3732152673.index

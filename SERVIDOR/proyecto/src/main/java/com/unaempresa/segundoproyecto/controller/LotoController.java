@@ -1,52 +1,26 @@
 package com.unaempresa.segundoproyecto.controller;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.unaempresa.segundoproyecto.model.Loto;
+import com.unaempresa.segundoproyecto.services.LotoServiceImpl;
 
 @Controller
 @RequestMapping("/loto")
 public class LotoController {
 
-	List<Loto> listaLotos = importarLotos();
-
-	private List<Loto> importarLotos() {
-		List<Loto> ts = new ArrayList<>();
-
-		ts.add(new Loto("España", 49, 6));
-		ts.add(new Loto("Alemania", 49, 6));
-		ts.add(new Loto("Francia", 90, 6));
-		ts.add(new Loto("Italia", 49, 5));
-
-		return ts;
-	}
-
-	private List<Integer> generarCombinacion(int max, int cantidad) {
-		Random random = new Random();
-		List<Integer> combinacion = new ArrayList<>();
-
-		while (combinacion.size() < cantidad) {
-			int numero = random.nextInt(1,max);
-			if (!combinacion.contains(numero)) {
-				combinacion.add(numero);
-			}
-		}
-		Collections.sort(combinacion);
-		return combinacion;
-	}
+	@Autowired
+	@Qualifier("lotoService")
+	private LotoServiceImpl lotoService;
 
 	@GetMapping("/menu")
 	public String mostrarLotos(Model model) {
-		model.addAttribute("listaLotos", listaLotos);
+		model.addAttribute("listaLotos", lotoService.importarLotos());
 		return "lotos";
 	}
 
@@ -55,7 +29,7 @@ public class LotoController {
 			@PathVariable String pais) {
 
 		model.addAttribute("pais", pais);
-		model.addAttribute("combinacion", generarCombinacion(max, total));
+		model.addAttribute("combinacion",lotoService.generarCombinacion(max, total));
 		return "generador";
 	}
 

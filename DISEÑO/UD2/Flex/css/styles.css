@@ -1,0 +1,52 @@
+/* CONTENEDOR PADRE */
+
+.flexHorizontalX {
+    /* Mover elementos horizontal*/
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+}
+
+.flexVerticalY {
+    /* Mover elementos vertical*/
+    display: flex;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+
+    align-items: space-between;
+    align-items: space-around;
+    align-items: space-evenly;
+
+    flex-wrap: wrap; /* Si no caben elementos */
+    flex-direction: column; /* vista movil en columna  */
+    flex-direction: row-reverse; /* Invertir elementos del div  */
+}
+
+/* CONTENEDORES HIJOS */
+
+.flexHijo{
+    align-self: center;
+    align-self: flex-start;
+    align-self: flex-end;
+    order: 9999; /* mover a la ultima pos */
+    order: -999;/* mover a la primera pos */
+    position: relative;
+}
+
+/* OBJETO DENTRO DEL HIJO (POSITION) */
+
+.icono{
+    position:  absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+

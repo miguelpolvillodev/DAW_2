@@ -1,0 +1,30 @@
+.contenedor {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    position: relative
+}
+
+.icono{
+    position:  absolute;
+    display: flex;
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de alumnos</title>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <h2>Gestión de alumnos</h2>
+
+  <div>Tiempo que queda de día:
+    <input type="text" id="reloj" readonly>
+    <button type="button" id="btnParar">Parar reloj</button>
+  </div>
+
+  <form id="formulario">
+    Nombre: <input type="text" id="nombre"><br>
+    Edad: <input type="text" id="edad"><br>
+    Curso:
+    <select id="curso">
+      <option value="0">Elige curso</option>
+      <option value="DAW1">DAW1</option>
+      <option value="DAW2">DAW2</option>
+    </select><br>
+    Modalidad:
+    <input type="radio" name="modalidad" value="Presencial"> Presencial
+    <input type="radio" name="modalidad" value="Online"> Online<br>
+    Asignaturas:
+    <input type="checkbox" name="asig" value="Cliente"> Cliente
+    <input type="checkbox" name="asig" value="Servidor"> Servidor
+    <input type="checkbox" name="asig" value="Java"> Java<br>
+    <button type="submit" id="btnAnadir">Añadir alumno</button>
+  </form>
+
+  <div id="mensaje"></div>
+
+  <table border="1">
+    <thead>
+      <tr><th>Nombre</th><th>Edad</th><th>Curso</th><th>Modalidad</th><th>Asignaturas</th><th></th></tr>
+    </thead>
+    <tbody id="cuerpo"></tbody>
+  </table>
+
+  <button type="button" id="btnResumen">Resumen</button>
+  <div id="aviso"></div>
+</body>
+</html>

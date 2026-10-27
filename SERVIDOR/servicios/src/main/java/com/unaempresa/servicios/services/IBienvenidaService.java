@@ -8,4 +8,5 @@ public interface IBienvenidaService {
 	public abstract String dimeHola(String nombre);
 	public abstract String dimeAdios(String nombre);
 	
+	
 }

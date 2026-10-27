@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+table {
+border: solid 1px;
+}
+</style>
+</head>
+<body>
+<table >
+	<thead>
+		<tr>
+		<th >Especie</th>
+		<th >Cantidad</th>
+		<th >Precio</th>
+		<th >Tipo</th>
+		<th >Oferta</th>
+		<th >Eliminar Animal</th>
+		
+		</tr>
+	</thead>
+	<tbody>
+	<tr th:each="animal : ${todosAnimales}">
+		<td th:text="${animal.especie}"></td>
+		<td th:text="${animal.cantidad}"></td>
+		<td th:text="${animal.precio}"></td>
+		<td th:text="${animal.tipo}"></td>
+		<td th:text="${animal.oferta}"></td>
+		<td><a th:href="@{/animal/borrar/{id}(id=${animal.id})}">Borrar</a></td>
+	</tr>
+	</tbody>
+
+</table>
+</body>
+</html>

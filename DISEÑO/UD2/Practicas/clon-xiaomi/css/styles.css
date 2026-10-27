@@ -1,0 +1,189 @@
+/* Fuente xiaomi */
+@import url("https://cdn.jsdelivr.net/npm/misans@5.0.0/lib/Normal/MiSansVF.min.css");
+
+body {
+  font-family: 'MiSans VF', sans-serif;
+  font-weight: 450;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-principal {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo { 
+    width: 50px; 
+    height: auto; 
+}
+
+ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.menu { 
+    display: flex; 
+    align-items: center; 
+    gap: 24px; 
+}
+
+a { 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+
+}
+
+.slider img{
+    width: 100%;
+}
+.text-slider{
+    bottom: 30%;
+    left: 10%;
+    position: absolute;
+    z-index: 99999;
+}
+
+.sliderMain{
+    position: relative;
+}
+
+h2{
+    text-align: center;
+}
+
+main{
+    background-color: #d0d0d0
+}
+
+.nav-secundario{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.menu-2{
+ display: flex; 
+ align-items: center; 
+ gap: 24px;
+}
+
+li:hover{
+ display: flex; 
+ align-items: center; 
+ gap: 24px;
+ color: #ff7819;
+ border-bottom: 2px solid #ff7819;
+ padding-bottom: 2%;
+}
+
+
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: warp;
+    
+   
+   
+}
+
+.card{
+    width: 85%;
+    background-color: aliceblue;
+    border-radius: 2%;
+    margin-top: 1%;
+}
+
+.pro1{
+    padding: 2%;
+    width: 60%;
+    
+    
+}
+
+.primeros{
+    display: flex;
+}
+
+.pro1 img{
+    border-radius: 4%;
+}
+
+.textoPro{
+    background-color: #d0d0d0;
+    border-radius: 4%;
+    padding: 4%;
+    margin: 2%;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+.prodAbajo{
+    display: flex;
+}
+
+.pro2{
+    width: 20%;
+    height: 50%;
+    background-color: #d0d0d0;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    border-radius: 4%;
+    text-align: center;
+}
+
+
+.pro3{
+    width: 20%;
+    height: 50%;
+    background-color: #d0d0d0;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    border-radius: 4%;
+    text-align: center;
+}
+.pro4{
+    width: 20%;
+    height: 50%;
+    background-color: #d0d0d0;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    border-radius: 4%;
+    text-align: center;
+}
+.pro5{
+    width: 20%;
+    height: 50%;
+    background-color: #d0d0d0;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    border-radius: 4%;
+    text-align: center;
+}
+
+.descubre{
+    border-radius: 2%;
+    background-color: black;
+    color: white;
+}

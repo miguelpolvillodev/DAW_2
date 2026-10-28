@@ -1,14 +1,39 @@
 package com.unaempresa.servicios.model;
 
+import jakarta.validation.constraints.DecimalMax;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Size;
+
 public class Animal {
 
 	private static int nextId;
 	private int id;
+	
+	@NotBlank(message = "{animal.especie.obligatoria}")
+	@Size(min=2, max=30, message = "{animal.especie.longitud}")
 	private String especie;
+	
+	@Min(value = 0, message = "{animal.cantidad.minimo}") 
+	@Max(value = 1000, message = "{animal.cantidad.maximo}")
 	private int cantidad;
+	
+	@Positive(message = "{animal.precio.positivo}")
+	@DecimalMax(value = "100000", message = "{animal.precio.maximo}")
 	private double precio;
+	
+	@Pattern(regexp = "Mamífero|Ave|Pez|Reptil|Anfibio",
+			message = "{animal.tipo.lista}")
 	private String tipo;
+	
 	private boolean oferta;
+	
+	public Animal() {
+		
+	}
 	
 	public Animal( String especie, int cantidad, double precio, String tipo, boolean oferta) {
 		id = nextId++;

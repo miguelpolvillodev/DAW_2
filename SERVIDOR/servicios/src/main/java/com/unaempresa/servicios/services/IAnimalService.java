@@ -9,4 +9,6 @@ public interface IAnimalService {
 	public abstract List<Animal> obtenerTodosAnimales();
 	public abstract Animal obtenerPorId(int id);
 	public abstract void borrarPorId(int id);
+	public abstract void saveAnimal(Animal a);
+	
 }

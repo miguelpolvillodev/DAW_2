@@ -13,6 +13,7 @@ color: red;
 <form method="POST" 
 th:action="@{/animal/guardar}"
 th:object="${animal}">
+<input type="hidden" th:field="*{id}">
 <p>
 			<label for="especie">Especie</label>
 			<input type="text" th:field="*{especie}">
@@ -46,7 +47,7 @@ th:object="${animal}">
 		</p>
 		<p>
 			<button type="submit">Guardar</button>
-			<button th:href="@{/animal/todos}">Cancelar</button>
+			<a th:href="@{/animal/todos}">Cancelar</a>
 		</p>
 	</form>
 </body>

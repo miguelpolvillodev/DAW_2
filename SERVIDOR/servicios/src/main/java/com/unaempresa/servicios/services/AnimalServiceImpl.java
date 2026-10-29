@@ -37,13 +37,21 @@ public class AnimalServiceImpl implements IAnimalService {
 
 	@Override
 	public void saveAnimal(Animal a) {
-	    Animal existente = obtenerPorId(a.getId());
-
-	    if (existente == null) {
-	        Animales.getListaAnimales().add(a);   // no existe: alta
+	    if (a.getId() == 0) {
+	        a.setId(Animal.getNextId());
+	        Animal.setNextId(Animal.getNextId() + 1);
+	        Animales.getListaAnimales().add(a);
 	    } else {
-	        int pos = Animales.getListaAnimales().indexOf(existente);
-	        Animales.getListaAnimales().set(pos, a);   // existe: reemplazar
+	        for (Animal an : Animales.getListaAnimales()) {
+	            if (an.getId() == a.getId()) {
+	                an.setCantidad(a.getCantidad());
+	                an.setEspecie(a.getEspecie());
+	                an.setOferta(a.isOferta());
+	                an.setPrecio(a.getPrecio());
+	                an.setTipo(a.getTipo());
+	                break;
+	            }
+	        }
 	    }
 	}
 

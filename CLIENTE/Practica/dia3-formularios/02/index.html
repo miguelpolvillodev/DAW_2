@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/pedido.js"></script>
+</head>
+<body>
+    <form id="pedido">
+        <h3>Tamaño</h3>
+        <label><input type="radio" name="tamano" value="6"> Pequeña (6 €)</label><br>
+        <label><input type="radio" name="tamano" value="8"> Mediana (8 €)</label><br>
+        <label><input type="radio" name="tamano" value="10"> Grande (10 €)</label><br>
+        <h3>Ingredientes extra (1 € cada uno)</h3>
+        <label><input type="checkbox" name="ingrediente" value="Queso"> Queso</label>
+        <label><input type="checkbox" name="ingrediente" value="Jamón"> Jamón</label>
+        <label><input type="checkbox" name="ingrediente" value="Champiñones"> Champiñones</label>
+        <label><input type="checkbox" name="ingrediente" value="Piña"> Piña</label>
+        <h3>Bebida</h3>
+        <select id="bebida">
+            <option value="0">Sin bebida</option>
+            <option value="1">Agua</option>
+            <option value="2">Refresco</option>
+        </select>
+        <h3>Cantidad</h3>
+        <input type="text" id="cantidad"><br><br>
+        <button type="button" id="calcular">Calcular</button>
+        <button type="button" id="limpiar">Limpiar</button>
+    </form>
+    <div id="total"></div>
+</body>
+</html>

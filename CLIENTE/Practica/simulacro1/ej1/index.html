@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de entradas</title>
+    <script src="js/reserva.js"></script>
+</head>
+<body>
+    <h2>Reserva de entradas</h2>
+    Nombre: <input type="text" id="nombre"><br><br>
+    Entradas: <input type="text" id="entradas"><br><br>
+    Tipo:
+    <input type="radio" name="tipo" value="general"> General (20 euros)
+    <input type="radio" name="tipo" value="vip"> VIP (35 euros)<br><br>
+    <input type="checkbox" id="newsletter"> Quiero recibir novedades<br><br>
+    <button type="button" id="reservar">Reservar</button>
+    <div id="resultado"></div>
+    <ul id="historial"></ul>
+</body>
+</html>

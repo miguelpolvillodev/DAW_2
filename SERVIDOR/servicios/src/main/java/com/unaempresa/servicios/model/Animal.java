@@ -1,42 +1,26 @@
 package com.unaempresa.servicios.model;
 
-import jakarta.validation.constraints.DecimalMax;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.Size;
-
 public class Animal {
 
-	private static int nextId;
+	// Contador compartido por la clase (static): da un id distinto a cada animal nuevo.
+	private static int nextId = 1;
+
+	// Todos los atributos son privados: solo se accede a ellos con getters y setters.
 	private int id;
-	
-	@NotBlank(message = "{animal.especie.obligatoria}")
-	@Size(min=2, max=30, message = "{animal.especie.longitud}")
 	private String especie;
-	
-	@Min(value = 0, message = "{animal.cantidad.minimo}") 
-	@Max(value = 1000, message = "{animal.cantidad.maximo}")
 	private int cantidad;
-	
-	@Positive(message = "{animal.precio.positivo}")
-	@DecimalMax(value = "100000", message = "{animal.precio.maximo}")
 	private double precio;
-	
-	@Pattern(regexp = "Mamífero|Ave|Pez|Reptil|Anfibio",
-			message = "{animal.tipo.lista}")
 	private String tipo;
-	
 	private boolean oferta;
-	
+
+	// Constructor en blanco: crea un animal vacío, con id = 0, para rellenarlo con los setters.
+	// Spring lo usa para recoger los datos del formulario.
 	public Animal() {
-		
 	}
-	
-	public Animal( String especie, int cantidad, double precio, String tipo, boolean oferta) {
-		id = nextId++;
+
+	// El id no se recibe por parámetro: lo asigna la propia clase con nextId++.
+	public Animal(String especie, int cantidad, double precio, String tipo, boolean oferta) {
+		this.id = nextId++;
 		this.especie = especie;
 		this.cantidad = cantidad;
 		this.precio = precio;
@@ -44,18 +28,12 @@ public class Animal {
 		this.oferta = oferta;
 	}
 
-	public static int getNextId() {
-		return nextId;
-	}
-
-	public static void setNextId(int nextId) {
-		Animal.nextId = nextId;
-	}
-
+	// Getter: permite leer una propiedad privada desde fuera de la clase.
 	public int getId() {
 		return id;
 	}
 
+	// Setter: permite modificar una propiedad privada desde fuera de la clase.
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -92,6 +70,7 @@ public class Animal {
 		this.tipo = tipo;
 	}
 
+	// En un boolean el getter se llama isXxx en lugar de getXxx.
 	public boolean isOferta() {
 		return oferta;
 	}
@@ -99,8 +78,10 @@ public class Animal {
 	public void setOferta(boolean oferta) {
 		this.oferta = oferta;
 	}
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Animal [id=" + id + ", especie=" + especie + ", cantidad=" + cantidad
+				+ ", precio=" + precio + ", tipo=" + tipo + ", oferta=" + oferta + "]";
+	}
 }

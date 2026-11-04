@@ -1,5 +1,5 @@
 var tbody;
-var tr;
+var arrayP;
 
 const inicio = () => {
 
@@ -7,6 +7,8 @@ const inicio = () => {
     window.document.getElementById("selec").addEventListener("click", selec)
     window.document.getElementById("deselec").addEventListener("click", deselect)
     window.document.getElementById("eliminar").addEventListener("click", eliminar)
+    window.document.getElementById("add").addEventListener("click", añadirProd)
+  
 
     let Pro1 = {
     id: 1,
@@ -33,7 +35,7 @@ const inicio = () => {
     codigo:"A114"
 }
 
-  var arrayP = [Pro1,Pro2,Pro3,Pro4]
+   arrayP = [Pro1,Pro2,Pro3,Pro4]
    tbody = document.getElementById("cuerpoTabla")
   
  
@@ -43,16 +45,30 @@ const inicio = () => {
   for (let i = 0; i < arrayP.length; i++) {
 
     let prod = arrayP[i]
-     tr = document.createElement("tr")
+    let tr = document.createElement("tr")
+     
+
+     tr.addEventListener("mouseover", () => {
+       tr.style.backgroundColor = "yellow"
+     });
+
+     tr.addEventListener("mouseout", () => {
+       tr.style.backgroundColor = ""
+     })
     tr.id = prod.id
 
      let td1 = document.createElement("td")
      let td2 = document.createElement("td")
      let td3 = document.createElement("td")
 
-    td1.innerHTML = prod.nombre
+    
     td2.innerHTML = prod.precio
     td3.innerHTML = prod.codigo
+
+    let enlaceNombre = document.createElement("a")
+    enlaceNombre.href ="#"
+    enlaceNombre.innerHTML = prod.nombre
+    td1.appendChild(enlaceNombre)
 
     tbody.appendChild(tr)
     tr.appendChild(td1)
@@ -67,12 +83,14 @@ let arrayF = tbody.getElementsByTagName("tr")
 
 for (let i = 0; i < arrayF.length; i++) {
    let td = document.createElement("td")
-   let inp = document.createElement("Input")
+   let inp = document.createElement("input")
    inp.type = "checkbox"
    inp.id = "checkbox" + (i + 1)
    inp.name = "marcar"
    td.appendChild(inp)
    arrayF[i].appendChild(td)
+
+
     
 }
 
@@ -102,5 +120,56 @@ const eliminar = () => {
     }
   }
 }
+
+const añadirProd = () => {
+
+  let arrayTd = window.document.getElementsByTagName("tr")
+
+  let iNombre = window.document.getElementById("nombreN")
+  let iPrecio = window.document.getElementById("precioN")
+  let iCodigo = window.document.getElementById("codigoN")
+
+    
+ 
+
+  let prodN = {
+    id: arrayTd.length,
+    nombre: iNombre.value ,
+    precio: iPrecio.value,
+    codigo: iCodigo.value
+
+  }
+
+  arrayP.push(prodN);
+
+  
+
+    let prodI = arrayP[arrayP.length -1 ]
+    let tr = document.createElement("tr")
+     tr.addEventListener("mouseover", () => {
+       tr.style.backgroundColor = "yellow"
+     });
+
+     tr.addEventListener("mouseout", () => {
+       tr.style.backgroundColor = ""
+     })
+    tr.id = prodI.id
+
+     let td1 = document.createElement("td")
+     let td2 = document.createElement("td")
+     let td3 = document.createElement("td")
+
+    td1.innerHTML = prodI.nombre
+    td2.innerHTML = prodI.precio
+    td3.innerHTML = prodI.codigo
+
+    tbody.appendChild(tr)
+    tr.appendChild(td1)
+    tr.appendChild(td2)
+    tr.appendChild(td3)
+    
+  
+}
+
 
 window.document.addEventListener("DOMContentLoaded", inicio)

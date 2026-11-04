@@ -5,7 +5,6 @@ import java.util.List;
 
 import com.unaempresa.instrumentos.model.Familia;
 import com.unaempresa.instrumentos.model.Instrumento;
-import com.unaempresa.servicios.model.Animal;
 
 public class Instrumentos {
 
@@ -70,11 +69,24 @@ public class Instrumentos {
 	
 	public static List<Familia> dameTipos() {
 		List<Familia> tipos = new ArrayList<>();
-		for (Familia f : animales) {
-			if (!tipos.contains(animal.getTipo())) {
-				tipos.add(animal.getTipo());
+		
+		for (Instrumento i : instrumentos) {
+			if (!tipos.contains(i.getFamilia())){
+				tipos.add(i.getFamilia());
 			}
 		}
 		return tipos;
+	}
+	
+	public static List<Instrumento> soloUsados(){
+		List<Instrumento> usados = new ArrayList<>();
+		
+		for (Instrumento i : instrumentos) {
+			if(i.isUsado() && !usados.contains(i)) {
+				usados.add(i);
+			}
+			
+		}
+		return usados;
 	}
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Tienda de instrumentos</h1>
+<table border=1>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Especie</th>
+				<th>Cantidad</th>
+				<th>Precio</th>
+				<th>Tipo</th>
+				<th>Oferta</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="instrumento : ${listaInstrumentos}">
+				<td th:text="${instrumento.id}"></td>
+				<td th:text="${instrumento.modelo}"></td>
+				<td th:text="${instrumento.existencias}"></td>
+				<td th:text="${instrumento.precio} + ' €'"></td>
+				<td th:text="${instrumento.familia}"></td>
+				<td th:text="${instrumento.usado} ? 'Sí' : 'No'"></td>
+				<td>
+					<a th:href="@{'/instrumento/id/' + ${instrumento.id}}">Ver</a>
+					<a th:href="@{'/instruemnto/editar/' + ${instrumento.id}}">Editar</a>
+					<a th:href="@{'/instrumento/borrar/' + ${instrumento.id}}">Borrar</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido de camisetas</title>
+    <script src="js/pedido.js"></script>
+</head>
+<body>
+    <h2>Pedido de camisetas</h2>
+    <form name="pedido">
+        Nombre: <input type="text" name="nombre"><br><br>
+        Cantidad: <input type="text" name="cantidad"><br><br>
+        Talla:
+        <select name="talla">
+            <option value="">Elige talla</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+        </select><br><br>
+        Pago:
+        <input type="radio" name="pago" value="tarjeta"> Tarjeta
+        <input type="radio" name="pago" value="efectivo"> Efectivo<br><br>
+        <input type="button" value="Enviar" name="enviar">
+    </form>
+    <div id="resumen"></div>
+</body>
+</html>

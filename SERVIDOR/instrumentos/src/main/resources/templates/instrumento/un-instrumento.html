@@ -7,7 +7,12 @@
 <body>
 <ul>
 
- <li th></li>
+ <li>Id: <span th:text="${instrumento.id}"></span></li>
+ <li>Modelo: <span th:text="${instrumento.modelo}"></span></li>
+ <li>Existencias: <span th:text="${instrumento.existencias}"></span></li>
+ <li>Precio: <span th:text="${instrumento.precio}"></span></li>
+ <li>Familia: <span th:text="${instrumento.familia}"></span></li>
+ <li>Usado: <span th:text="${instrumento.usado} ? 'Sí' : 'No'"></span></li>
 </ul>
 </body>
 </html>

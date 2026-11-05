@@ -32,7 +32,7 @@ public class InstrumentoController {
 
 	@GetMapping("/id/{id}")
 	public String damePorId(Model model, @PathVariable long id) {
-		model.addAttribute("un-instrumento", instrumentoService.damePorId(id));
+		model.addAttribute("instrumento", instrumentoService.damePorId(id));
 		return "instrumento/un-instrumento";
 	}
 	

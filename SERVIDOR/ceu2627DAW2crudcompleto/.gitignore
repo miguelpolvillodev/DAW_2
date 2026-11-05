@@ -1,0 +1,15 @@
+.DS_Store
+~$*
+.claude/settings.local.json
+privado/
+alumnado/
+node_modules/
+.venv/
+/tmp/
+*.docx
+*.pdf
+target/
+pronunciacion/audio/
+pronunciacion/catalogo.json
+salida/
+__pycache__/

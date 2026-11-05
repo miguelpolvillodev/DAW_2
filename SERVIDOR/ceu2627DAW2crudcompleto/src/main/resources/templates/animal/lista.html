@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+</head>
+<body>
+	<h1 th:text="${titulo}"></h1>
+	<h2>Todos los animales</h2>
+	<p><a th:href="@{/animal/nuevo}">Nuevo animal</a></p>
+	<form th:action="@{/animal/todos}" method="get">
+		<label for="tipo">Tipo</label>
+		<select id="tipo" name="tipo">
+			<option value="">Todos</option>
+			<option th:each="t : ${tipos}" th:value="${t}" th:text="${t}"
+				th:selected="${t == tipo}"></option>
+		</select>
+		<input type="checkbox" id="soloOferta" name="soloOferta" value="true"
+			th:checked="${soloOferta}">
+		<label for="soloOferta">Solo en oferta</label>
+		<button type="submit">Filtrar</button>
+		<a th:href="@{/animal/todos}">Quitar filtro</a>
+	</form>
+	<!--/* #lists.isEmpty y no animales.size == 0: la lista es de solo lectura
+		y Thymeleaf no puede leer su size. */-->
+	<!--/* El comentario de arriba y este mismo son comentarios de Thymeleaf: se
+		eliminan al generar la página y no llegan al navegador, a diferencia de uno
+		HTML normal. Se usan para notas del programador que no deben verse en el
+		código fuente. */-->
+	<p th:if="${#lists.isEmpty(animales)}">No hay animales que mostrar</p>
+
+	<table th:unless="${#lists.isEmpty(animales)}" border=1>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Especie</th>
+				<th>Cantidad</th>
+				<th>Precio</th>
+				<th>Tipo</th>
+				<th>Oferta</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="animal : ${animales}">
+				<td th:text="${animal.id}"></td>
+				<td th:text="${animal.especie}"></td>
+				<td th:text="${animal.cantidad}"></td>
+				<td th:text="${animal.precio} + ' €'"></td>
+				<td th:text="${animal.tipo}"></td>
+				<td th:text="${animal.oferta} ? 'Sí' : 'No'"></td>
+				<td>
+					<a th:href="@{'/animal/id/' + ${animal.id}}">Ver</a>
+					<a th:href="@{'/animal/editar/' + ${animal.id}}">Editar</a>
+					<a th:href="@{'/animal/borrar/' + ${animal.id}}">Borrar</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

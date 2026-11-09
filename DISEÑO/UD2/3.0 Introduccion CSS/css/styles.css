@@ -1,0 +1,36 @@
+body{
+    background-color: blue;
+    color: white;
+}
+
+.contenedor{
+    border:  2px solid;
+    padding: 16px;
+    margin: 16px;
+    background-color: #000;
+}
+
+@media print {
+    body{
+        background-color:  white;
+        color: #000;
+    }
+
+    h1,
+    p{
+        display: none;
+    }
+
+    .contenedor p{
+        display: block;
+    }
+
+    .contenedor {
+        background-color: white;
+        border: 0px;
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+}

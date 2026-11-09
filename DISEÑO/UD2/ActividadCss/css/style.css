@@ -1,0 +1,56 @@
+body{
+    font-family: "Montserrat";
+}
+
+h1{
+    text-align: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.libro{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    
+}
+
+.mundo{
+display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.caja p{
+    background-color: yellow ;
+}
+/*Padre directo*/
+body > p {
+    background-color: red;
+}
+/**/
+body + p {
+    background-color: aqua;
+}
+
+@media print{
+    .contenedor i {
+        display: none;
+    }
+    .contenedor {
+        text-align: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,10 @@
+INSERT INTO pelicula (titulo, anio, recaudacion, en_cartelera, genero) VALUES ('La última frontera', 2019, 412000000, false, 'ACCION');
+INSERT INTO pelicula (titulo, anio, recaudacion, en_cartelera, genero) VALUES ('Cena para once', 2022, 58000000, true, 'COMEDIA');
+INSERT INTO pelicula (titulo, anio, recaudacion, en_cartelera, genero) VALUES ('El faro de cristal', 2021, 97000000, false, 'DRAMA');
+INSERT INTO pelicula (titulo, anio, recaudacion, en_cartelera, genero) VALUES ('Casa sin puertas', 2023, 134000000, true, 'TERROR');
+INSERT INTO pelicula (titulo, anio, recaudacion, en_cartelera, genero) VALUES ('Reino de ceniza', 2020, 275000000, false, 'FANTASIA');
+INSERT INTO pelicula (titulo, anio, recaudacion, en_cartelera, genero) VALUES ('Persecución en Lisboa', 2024, 189000000, true, 'ACCION');
+INSERT INTO pelicula (titulo, anio, recaudacion, en_cartelera, genero) VALUES ('Mi vecino el inventor', 2018, 41000000, false, 'COMEDIA');
+INSERT INTO pelicula (titulo, anio, recaudacion, en_cartelera, genero) VALUES ('Lo que calló el mar', 2024, 63000000, true, 'DRAMA');
+INSERT INTO pelicula (titulo, anio, recaudacion, en_cartelera, genero) VALUES ('Sombras en el desván', 2017, 88000000, false, 'TERROR');
+INSERT INTO pelicula (titulo, anio, recaudacion, en_cartelera, genero) VALUES ('El dragón del valle', 2023, 321000000, true, 'FANTASIA');

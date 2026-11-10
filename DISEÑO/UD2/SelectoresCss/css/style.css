@@ -1,0 +1,31 @@
+.flex_item{
+    width: 10%;
+}
+.fas.fa-book{
+color: green;
+}
+.flex_contenedor > .flex_item{
+    text-align: center;
+}
+h1, p{
+    font-size: 20px;
+}
+
+
+
+.flex_contenedor > .flex_item, h1{
+    text-transform: uppercase;
+}
+
+div.flex_item > p{
+
+}
+div.flex_contenedor > p{
+
+}
+.fa-globe~p{
+
+}
+.fa-file-alt~p{
+
+}

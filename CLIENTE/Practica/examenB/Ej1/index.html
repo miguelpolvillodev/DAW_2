@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Tienda</title>
+  <link rel="stylesheet" href="css/tienda.css">
+  <script src="js/tienda.js"></script>
+</head>
+<body>
+  <header>
+    <h1>MINI TIENDA</h1>
+    <div id="reloj" class="reloj"></div>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio (€)</th>
+          <th>Stock</th>
+          <th>Marcar</th>
+        </tr>
+      </thead>
+      <tbody id="cuerpoTabla"></tbody>
+    </table>
+
+    <div class="nuevo">
+      <input type="text" id="nombreN" placeholder="Nombre del producto">
+      <input type="text" id="precioN" placeholder="Precio">
+      <input type="text" id="stockN" placeholder="Stock">
+      <input type="button" id="add" value="Añadir producto">
+      <input type="button" id="borrar" value="Borrar marcados">
+    </div>
+
+    <div id="error"></div>
+    <div id="total"></div>
+  </main>
+</body>
+</html>

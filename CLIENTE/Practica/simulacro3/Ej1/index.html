@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gastos</title>
+  <link rel="stylesheet" href="css/gastos.css">
+  <script src="js/gastos.js"></script>
+</head>
+<body>
+  <h1>Mis gastos</h1>
+  <p id="fecha"></p>
+  <table>
+    <thead>
+      <tr><th>Concepto</th><th>Categoría</th><th>Importe (€)</th><th>Marcar</th></tr>
+    </thead>
+    <tbody id="cuerpoTabla"></tbody>
+  </table>
+  <p id="total"></p>
+  <div class="nuevo">
+    <input type="text" id="concepto" placeholder="Concepto">
+    <select id="categoria">
+      <option value="">-- Categoría --</option>
+      <option value="Comida">Comida</option>
+      <option value="Ocio">Ocio</option>
+      <option value="Casa">Casa</option>
+    </select>
+    <input type="text" id="importe" placeholder="Importe">
+    <button id="add">Añadir gasto</button>
+    <button id="borrar">Borrar marcados</button>
+  </div>
+  <p id="error"></p>
+</body>
+</html>

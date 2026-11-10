@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta</title>
+  <link rel="stylesheet" href="css/encuesta.css">
+  <script src="js/encuesta.js"></script>
+</head>
+<body>
+  <h1>Encuesta</h1>
+  <form name="encuesta">
+    <p>Nombre: <input type="text" name="nombre"></p>
+    <p>Turno:
+      <select name="turno">
+        <option value="">-- Elige --</option>
+        <option value="mañana">Mañana</option>
+        <option value="tarde">Tarde</option>
+      </select>
+    </p>
+    <p>Nivel:
+      <input type="radio" name="nivel" value="básico"> Básico
+      <input type="radio" name="nivel" value="avanzado"> Avanzado
+    </p>
+    <p><input type="checkbox" name="acepto"> Acepto las condiciones</p>
+    <p><input type="button" name="enviar" value="Enviar"></p>
+  </form>
+  <p id="error"></p>
+  <p id="resultado"></p>
+</body>
+</html>

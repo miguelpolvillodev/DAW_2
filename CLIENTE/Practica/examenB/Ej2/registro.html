@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alta de socios</title>
+  <link rel="stylesheet" href="css/registro.css">
+  <script src="js/registro.js"></script>
+</head>
+<body>
+  <div class="caja">
+    <h1>Club Deportivo - Alta de socios</h1>
+    <form name="registro">
+      <div class="campo">
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+      </div>
+      <div class="campo">
+        <label>Correo:</label>
+        <input type="text" name="correo">
+      </div>
+      <div class="campo">
+        <label>Plan:</label>
+        <input type="radio" name="plan" value="basico"> Básico
+        <input type="radio" name="plan" value="premium"> Premium
+      </div>
+      <div class="campo">
+        <input type="checkbox" name="condiciones"> Acepto las condiciones
+      </div>
+      <input type="button" name="continuar" value="Continuar">
+    </form>
+    <div id="error"></div>
+    <div id="resultado"></div>
+  </div>
+</body>
+</html>

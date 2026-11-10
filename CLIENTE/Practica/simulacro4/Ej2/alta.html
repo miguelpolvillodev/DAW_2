@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alta</title>
+  <link rel="stylesheet" href="css/alta.css">
+  <script src="js/alta.js"></script>
+</head>
+<body>
+  <h1>Alta de usuario</h1>
+  <form name="alta">
+    <p>Usuario: <input type="text" name="usuario"> <span id="eUsuario"></span></p>
+    <p>Edad: <input type="text" name="edad"> <span id="eEdad"></span></p>
+    <p>Nombre: <input type="text" name="nombre"> <span id="eNombre"></span></p>
+    <p>Correo: <input type="text" name="correo"> <span id="eCorreo"></span></p>
+    <p>Contraseña: <input type="password" name="clave"> <span id="eClave"></span></p>
+    <p>Repite contraseña: <input type="password" name="clave2"> <span id="eClave2"></span></p>
+    <p>Ciudad:
+      <select name="ciudad">
+        <option value="">-- Elige --</option>
+        <option value="Sevilla">Sevilla</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Bilbao">Bilbao</option>
+      </select>
+      <span id="eCiudad"></span>
+    </p>
+    <p>Aficiones:
+      <input type="checkbox" name="afic" value="lectura"> Lectura
+      <input type="checkbox" name="afic" value="musica"> Música
+      <input type="checkbox" name="afic" value="deporte"> Deporte
+      <span id="eAfic"></span>
+    </p>
+    <p><input type="button" name="enviar" value="Enviar"></p>
+  </form>
+  <p id="resultado"></p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripción</title>
+  <link rel="stylesheet" href="css/inscripcion.css">
+  <script src="js/inscripcion.js"></script>
+</head>
+<body>
+  <h1>Inscripción al curso</h1>
+  <form name="inscripcion">
+    <p>Nombre: <input type="text" name="nombre"></p>
+    <p>Curso:
+      <select name="curso">
+        <option value="">-- Elige --</option>
+        <option value="1º DAW">1º DAW</option>
+        <option value="2º DAW">2º DAW</option>
+      </select>
+    </p>
+    <p>Modalidad:
+      <input type="radio" name="modalidad" value="presencial"> Presencial
+      <input type="radio" name="modalidad" value="online"> Online
+    </p>
+    <p><input type="checkbox" name="acepto"> Acepto las normas</p>
+    <p><input type="button" name="enviar" value="Enviar"></p>
+  </form>
+  <p id="error"></p>
+  <p id="resultado"></p>
+</body>
+</html>

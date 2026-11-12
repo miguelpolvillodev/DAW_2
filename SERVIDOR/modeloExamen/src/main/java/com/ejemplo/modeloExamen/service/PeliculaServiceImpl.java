@@ -1,4 +1,4 @@
-package com.ejemplo.modeloExamen.service;
+ package com.ejemplo.modeloExamen.service;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
 
+import com.ejemplo.modeloExamen.model.Genero;
 import com.ejemplo.modeloExamen.model.Pelicula;
 import com.ejemplo.modeloExamen.repository.PeliculaRepository;
 
@@ -13,7 +14,7 @@ import com.ejemplo.modeloExamen.repository.PeliculaRepository;
 public class PeliculaServiceImpl implements IPeliculaService{
 
 	@Autowired
-	protected PeliculaRepository peliculaRepository;
+	private PeliculaRepository peliculaRepository;
 	
 	@Override
 	public List<Pelicula> dameTodas() {
@@ -35,6 +36,21 @@ public class PeliculaServiceImpl implements IPeliculaService{
 	public void borrarPorId(Integer id) {
 		peliculaRepository.deleteById(id);
 		
+	}
+
+	@Override
+	public List<Pelicula> dameFiltradas(Genero genero, boolean soloCartelera) {
+		if(genero == null && !soloCartelera) {
+			return peliculaRepository.findAll();
+		}
+		if (genero == null) {
+			return peliculaRepository.findByEnCarteleraTrue();
+		}
+		if(!soloCartelera) {
+			return peliculaRepository.findByGenero(genero);
+		}
+		
+		return peliculaRepository.findByGeneroAndEnCarteleraTrue(genero);
 	}
 
 }

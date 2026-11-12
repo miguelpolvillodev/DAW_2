@@ -1313,3 +1313,63 @@
 2026-11-10 17:57:49.284: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-11-10 17:57:49.284: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-11-10 19:21:32.139: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 17:35:59.575: [INFO] CurrentProfilePath: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 17:35:59.575: [INFO] Profiles total count: 1
+2026-11-12 17:35:59.575: [INFO] Profile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 17:35:59.575: [INFO] LastUsedProfileDir: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 17:35:59.575: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 17:35:59.575: [INFO] OnDoneLoading sync enabled: 0
+2026-11-12 17:35:59.575: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-12 17:35:59.575: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-12 17:35:59.575: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 17:41:19.811: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 17:45:22.343: [INFO] CurrentProfilePath: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 17:45:22.343: [INFO] Profiles total count: 1
+2026-11-12 17:45:22.343: [INFO] Profile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 17:45:22.343: [INFO] LastUsedProfileDir: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 17:45:22.343: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 17:45:22.343: [INFO] OnDoneLoading sync enabled: 0
+2026-11-12 17:45:22.343: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-12 17:45:22.343: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-12 17:45:22.343: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 17:46:50.388: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 17:47:19.836: [INFO] CurrentProfilePath: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 17:47:19.836: [INFO] Profiles total count: 1
+2026-11-12 17:47:19.836: [INFO] Profile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 17:47:19.836: [INFO] LastUsedProfileDir: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 17:47:19.836: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 17:47:19.836: [INFO] OnDoneLoading sync enabled: 0
+2026-11-12 17:47:19.836: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-12 17:47:19.836: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-12 17:47:19.836: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 17:50:11.280: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 17:50:30.764: [INFO] CurrentProfilePath: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 17:50:30.764: [INFO] Profiles total count: 1
+2026-11-12 17:50:30.764: [INFO] Profile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 17:50:30.764: [INFO] LastUsedProfileDir: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 17:50:30.764: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 17:50:30.764: [INFO] OnDoneLoading sync enabled: 0
+2026-11-12 17:50:30.764: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-12 17:50:30.764: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-12 17:50:30.764: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 19:08:53.702: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 19:09:48.035: [INFO] CurrentProfilePath: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 19:09:48.035: [INFO] Profiles total count: 1
+2026-11-12 19:09:48.035: [INFO] Profile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 19:09:48.035: [INFO] LastUsedProfileDir: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 19:09:48.035: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 19:09:48.035: [INFO] OnDoneLoading sync enabled: 0
+2026-11-12 19:09:48.035: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-12 19:09:48.035: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-12 19:09:48.035: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 19:11:52.103: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 19:13:25.693: [INFO] CurrentProfilePath: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 19:13:25.693: [INFO] Profiles total count: 1
+2026-11-12 19:13:25.693: [INFO] Profile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 19:13:25.693: [INFO] LastUsedProfileDir: C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-12 19:13:25.693: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-22T18:04:27.134Z
+2026-11-12 19:13:25.693: [INFO] OnDoneLoading sync enabled: 0
+2026-11-12 19:13:25.693: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-12 19:13:25.693: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-12 19:13:25.693: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-12 19:38:38.887: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

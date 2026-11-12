@@ -1,5 +1,7 @@
 package com.ejemplo.modeloExamen.model;
 
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
@@ -7,6 +9,7 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
 
 @Entity
 public class Pelicula {
@@ -17,7 +20,8 @@ public class Pelicula {
 	private String titulo;
 	private Integer anio;
 	private long recaudacion;
-	private boolean en_cartelera;
+	@Column(name = "en_cartelera")
+	private boolean enCartelera;
 	@Enumerated(EnumType.STRING)
 	private Genero genero;
 	
@@ -26,11 +30,11 @@ public class Pelicula {
 	}
 	
 	
-	public Pelicula(String titulo, Integer anio, long recaudacion, boolean en_cartelera, Genero genero) {
+	public Pelicula(String titulo, Integer anio, long recaudacion, boolean enCartelera, Genero genero) {
 		this.titulo = titulo;
 		this.anio = anio;
 		this.recaudacion = recaudacion;
-		this.en_cartelera = en_cartelera;
+		this.enCartelera = enCartelera;
 		this.genero = genero;
 	}
 
@@ -76,12 +80,12 @@ public class Pelicula {
 
 
 	public boolean isEnCartelera() {
-		return en_cartelera;
+		return enCartelera;
 	}
 
 
 	public void setEnCartelera(boolean enCartelera) {
-		this.en_cartelera = enCartelera;
+		this.enCartelera = enCartelera;
 	}
 
 
@@ -92,6 +96,14 @@ public class Pelicula {
 
 	public void setGenero(Genero genero) {
 		this.genero = genero;
+	}
+
+	
+
+	@Override
+	public String toString() {
+		return "Pelicula [id=" + id + ", titulo=" + titulo + ", anio=" + anio + ", recaudacion=" + recaudacion
+				+ ", en_cartelera=" + enCartelera + ", genero=" + genero + "]";
 	}
 	
 	

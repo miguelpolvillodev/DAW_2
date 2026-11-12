@@ -5,29 +5,36 @@
 <title>Insert title here</title>
 </head>
 <style>
-table{
+table, th, td{
 border: solid 1px;
+border-collapse: collapse
 }
-</style style="border: solid 1px">
+</style>
 <body>
 <table>
 <thead>
-<tr>
-<th>Título</th>
-<th>Año</th>
-<th>Genero</th>
-<th>Recaudación</th>
-<th>Cartelera</th>
-<th>Acciones</th>
-<tr>
+	<tr>
+		<th>Título</th>
+		<th>Año</th>
+		<th>Genero</th>
+		<th>Recaudación</th>
+		<th>Cartelera</th>
+		<th>Acciones</th>
+	<tr>
 </thead>
 <tbody>
-<tr th:each="p : ${listaPelis}">
-
-<td th:text="${p.titulo}"></td>
-<td th:text="${p.anio}"></td>
-<td th:text="${p.recaudacion}"></td>
-</tr>
+	<tr th:each="p : ${listaPelis}">
+	<!-- Apuntar (ESTUDIAR) -->
+		<td><a th:text="${p.titulo}"  th:href="@{/peliculas/{id}(id=${p.id})}"></a></td>
+		<td th:text="${p.anio}"></td>
+		<td th:text="${p.recaudacion}"></td>
+		<td th:text="${p.enCartelera}"></td>
+		<td th:text="${p.genero}"></td>
+		<td>
+		<a>Editar</a>
+		<input type="button" value="Borrar"></button>
+		</td>
+	</tr>
 </tbody>
 
 

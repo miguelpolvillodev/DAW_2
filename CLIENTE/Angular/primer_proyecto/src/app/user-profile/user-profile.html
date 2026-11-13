@@ -1,0 +1,16 @@
+<p>user-profile works!</p>
+
+<!--Obtencion de atributos con [] (Se llama property binding)-->
+<h1 [innerHTML]="titulo"></h1>
+
+<div class="comp-user">
+    <p class="name">{{getNombre()}} </p>
+    <p class="role">{{getRol()}} </p>
+</div>
+
+<input type="text" [value]="nombre">
+
+<!--Binding con imagenes-->
+<img [src]="imagen">
+<!--Binding con estilos-->
+<p [class]="orange">Hola, buenas tardes! Mi nombre es {{nombre}} </p>

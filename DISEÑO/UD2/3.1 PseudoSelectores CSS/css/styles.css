@@ -1,0 +1,63 @@
+a{
+    color: red;
+}
+/* Acciones -> Pasar por encima */
+a:hover{
+    font-size: 2em;
+}
+/* Enlaces no visitados aun */
+a:link{
+    color: orange;
+}
+/* Enlaces visitados alemnos 1 vez*/
+a:visited{
+    color: blue;
+}
+/* Pulsar sin soltar (agarrar)*/
+a:active{
+color: green;
+}
+/* Todos los inputs de type text */
+/* Al seleccionar un elemento */
+input[type="text"]:focus{
+    border: 2px solid;
+    box-shadow: 3px 3px #000;
+}
+/* Primer P */
+div p:first-child{
+    background-color: orange;
+}
+/* Buscar hijos */
+div p:nth-child(2){
+    background-color: green;
+}
+div p:last-child{
+    background-color: yellow;
+}
+/* Añadir contenido ANTES*/
+div p:last-child::before{
+    content: 'Este';
+}
+/* Añadir contenido DESPUES*/
+div p:last-child::after{
+    content: 'Premio';
+}
+
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.item{
+    height: 50px;
+}
+
+.item1{
+    padding: 5%;
+}
+.item2{
+    width: 50%;
+    margin-top: 1px;
+}

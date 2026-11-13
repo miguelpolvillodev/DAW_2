@@ -12,14 +12,11 @@ h1, p{
 }
 
 
-
 .flex_contenedor > .flex_item, h1{
     text-transform: uppercase;
 }
 
-div.flex_item > p{
-
-}
+div.flex_item > p{}
 div.flex_contenedor > p{
 
 }

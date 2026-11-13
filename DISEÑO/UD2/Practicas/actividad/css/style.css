@@ -1,0 +1,38 @@
+.contenedor {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+
+.t1 {
+    background-color: #4CAF50;
+    width: 50%;
+    margin: 5px;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-bottom: 1em dashed #999;
+    border-right: 0.5em solid black;
+}
+
+
+.t2 {
+    background-color: black;
+    width: 75%;
+    margin: 5px;
+    padding: 2%;
+    margin-bottom: 10%;
+    border-top: 0.6em solid #4CAF50;
+    border-bottom: 0.6em solid #4CAF50;
+    border-left: 0.6em solid black;
+}

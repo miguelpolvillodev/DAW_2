@@ -1,0 +1,22 @@
+.contenedor {
+  /* iguel que si hicieramos .contenedor p porq color es heredable*/
+  color: green;
+  border-bottom: 5px solid;
+}
+
+p {
+  color: blue;
+}
+/* No puedo tocar la linea anterior solo añadir */
+/* 3 VALORES DE HERENCIA: unset, initial, inherit */
+p {
+  color: unset; /**/
+}
+
+.contenedor {
+  box-shadow: 65px 3px 3px #f1f1f1;
+  /*Derecha -Abajo - Difuminado*/
+  width: 500px;
+}
+
+

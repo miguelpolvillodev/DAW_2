@@ -1,0 +1,31 @@
+.campo {
+    position: relative;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px 32px 8px 8px; 
+    box-sizing: border-box;
+}
+
+.icono {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.campo .fa-eye {
+    display: none;
+}
+
+
+.campo:focus-within .fa-eye-slash {
+    display: none;
+}
+
+.campo:focus-within .fa-eye {
+    display: inline-block;
+}

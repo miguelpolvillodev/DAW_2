@@ -12,6 +12,14 @@
 <img src="./img/perro.jpg">
 <br>
 
-<input type="checkbox" [checked]="marcado">
+<input type="checkbox" [checked]="marcado"> <br>
+<input type="text" [disabled]="deshabilitar" value="{{nombre}}"> <br>
+<div>
+    <p>Asignatura: {{asignatura.nombre}}</p>
+</div>
+<div>
+    <p>Codigo: {{asignatura.codigo}}</p>
+</div>
 
 <app-user-profile></app-user-profile>
+<app-alumno></app-alumno>

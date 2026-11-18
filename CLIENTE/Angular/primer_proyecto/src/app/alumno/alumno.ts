@@ -61,5 +61,24 @@ export class Alumno {
       this.texto2 = "Pulsado IMPAR"
     }
   }
+
+  nombreCom:string = " "
+  nombreCompi(){
+    this.nombreCom = "Nacho"
+  }
+
+  textoP:string = " "
+  mostrarP(evento:any){
+    this.textoP += evento.target.value + ","
+  }
+
+  textoM:string = "";
+  estaMarcado(evento:any){
+    if(evento.target.checked == true){
+      this.textoM = "Está marcado"
+    }else{
+      this.textoM= "No está marcado"
+    }
+  }
   
 }

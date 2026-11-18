@@ -23,6 +23,15 @@
 <label>Par</label>
 <input type="radio" name="radios" value="P" (click)="radios($event)">
 <label>Impar</label>
-<input type="radio" name="radios" value="I" (click)="radios($event)">
+<input type="radio" name="radios" value="I" (click)="radios($event)"> <br>
+
+<input type="text" [value]="nombreCom">
+<input type="button" value="Click" (click)="nombreCompi()"> <br> <br>
+
+<input type="text" (keyup)="mostrarP($event)">
+<p [innerHTML]="textoP"></p> <br>
+
+<input type="checkbox" (click)="estaMarcado($event)">
+<p>{{textoM}}</p>
 
 

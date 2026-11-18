@@ -8,3 +8,21 @@
 
 <p>{{edadMultiplicada()}} {{mayorEdad()}}</p>
 
+<input type="text" (keyup)="escribirDiv($event)" [disabled]="desabilitado">
+<div>DNI: {{miTexto}} </div>
+
+<label>Mayor 18</label>
+<input type="checkbox" [checked]="marcarMayor18()"><br>
+
+<label>Alerta</label>
+<input type="checkbox" (click)="alerta($event)"> <br>
+
+<p >{{texto}}</p> <br>
+
+<p>{{texto2}}</p>
+<label>Par</label>
+<input type="radio" name="radios" value="P" (click)="radios($event)">
+<label>Impar</label>
+<input type="radio" name="radios" value="I" (click)="radios($event)">
+
+

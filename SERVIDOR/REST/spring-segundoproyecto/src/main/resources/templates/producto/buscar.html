@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+</head>
+<body>
+    <h1 th:text="${cabecera}"></h1>
+
+    <form th:action="@{/productos/buscar}" method="GET">
+        <label>Nombre: </label>
+        <input type="text" name="nombre" />
+        <button>Buscar</button>
+    </form>
+
+    <p th:if="${productos != null && productos.size() == 0}">
+        No se encontraron productos con ese nombre.
+    </p>
+
+    <table th:if="${productos != null && productos.size() > 0}" border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="producto : ${productos}">
+                <td th:text="${producto.nombre}"></td>
+                <td th:text="${producto.precio}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br/>
+    <a th:href="@{/clientes/lista}">Volver al listado de clientes</a>
+</body>
+</html>

@@ -1,0 +1,9 @@
+package com.ejemplo.apipropia.dto;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record NuevoPostDto(
+        @NotNull Long userId,
+        @NotBlank String title,
+        @NotBlank String body) {}

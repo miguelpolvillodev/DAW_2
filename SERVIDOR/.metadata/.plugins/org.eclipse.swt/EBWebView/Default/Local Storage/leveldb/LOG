@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
 2026/11/16-19:07:54.226 888 Reusing MANIFEST C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
 2026/11/16-19:07:54.228 888 Recovering log #3
 2026/11/16-19:07:54.234 888 Reusing old log C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+=======
+2026/11/11-00:05:37.877 583c Creating DB C:\Users\Zhex\Desktop\DAW 2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
+2026/11/11-00:05:37.909 583c Reusing MANIFEST C:\Users\Zhex\Desktop\DAW 2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+>>>>>>> Stashed changes

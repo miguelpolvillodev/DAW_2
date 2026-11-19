@@ -390,6 +390,7 @@
 {"logTime": "1110/175749", "session": "START"}
 {"logTime": "1110/175749", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
 {"logTime": "1110/192132", "session": "END"}
+<<<<<<< Updated upstream
 {"logTime": "1112/173559", "session": "START"}
 {"logTime": "1112/173559", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
 {"logTime": "1112/174119", "session": "END"}
@@ -435,3 +436,8 @@
 {"logTime": "1116/180753", "session": "START"}
 {"logTime": "1116/180753", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
 {"logTime": "1116/182440", "session": "END"}
+=======
+{"logTime": "1110/230537", "session": "START"}
+{"logTime": "1110/230537", "level": "INFO", "location": "chrome\\browser\\sessions\\session_service_log.cc:326 EdgeLogSessionServiceMessage", "message": "SessionServiceEvent: kStart - {\r\n   \"crashed\": false,\r\n   \"type\": 0\r\n}\r\n"}
+{"logTime": "1111/015327", "session": "END"}
+>>>>>>> Stashed changes

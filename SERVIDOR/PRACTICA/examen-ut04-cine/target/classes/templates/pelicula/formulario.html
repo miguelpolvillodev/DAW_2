@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${pelicula.id == 0} ? 'Nueva película' : 'Editar película'">Formulario</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}" />
+</head>
+<body>
+  <header>
+    <a th:href="@{/peliculas}"><img th:src="@{/img/logo.png}" alt="Logo de Cine Nova" height="50" /></a>
+  </header>
+  <h1 th:text="${pelicula.id == 0} ? 'Nueva película' : 'Editar película'">Formulario</h1>
+  <form th:action="@{/peliculas/guardar}" th:object="${pelicula}" method="post" novalidate>
+    <input type="hidden" th:field="*{id}" />
+    <p>
+      <label>Título <input type="text" th:field="*{titulo}" /></label>
+      <span th:if="${#fields.hasErrors('titulo')}" th:errors="*{titulo}" style="color: red; font-size: small"></span>
+    </p>
+    <p>
+      <label>Año <input type="number" th:field="*{anio}" /></label>
+      <span th:if="${#fields.hasErrors('anio')}" th:errors="*{anio}" style="color: red; font-size: small"></span>
+    </p>
+    <p>
+      <label>Recaudación (€) <input type="number" th:field="*{recaudacion}" /></label>
+      <span th:if="${#fields.hasErrors('recaudacion')}" th:errors="*{recaudacion}" style="color: red; font-size: small"></span>
+    </p>
+    <p>
+      <label>Género
+        <select th:field="*{genero}">
+          <option value="">Elige un género</option>
+          <option th:each="g : ${generos}" th:value="${g}" th:text="${g}">ACCION</option>
+        </select>
+      </label>
+      <span th:if="${#fields.hasErrors('genero')}" th:errors="*{genero}" style="color: red; font-size: small"></span>
+    </p>
+    <p>
+      <label><input type="checkbox" th:field="*{enCartelera}" /> En cartelera</label>
+    </p>
+    <button type="submit">Guardar</button>
+  </form>
+  <footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+</body>
+</html>

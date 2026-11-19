@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${pelicula.titulo}">Película</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}" />
+</head>
+<body>
+  <header>
+    <a th:href="@{/peliculas}"><img th:src="@{/img/logo.png}" alt="Logo de Cine Nova" height="50" /></a>
+  </header>
+  <h1 th:text="${pelicula.titulo}">Título de la película</h1>
+  <ul>
+    <li th:text="|Año: ${pelicula.anio}|">Año: 2020</li>
+    <li th:text="|Género: ${pelicula.genero}|">Género: ACCION</li>
+    <li th:text="|Recaudación: ${pelicula.recaudacion} €|">Recaudación: 0 €</li>
+  </ul>
+  <p th:if="${pelicula.enCartelera}">Esta película está en cartelera.</p>
+  <p th:unless="${pelicula.enCartelera}">Esta película ya no está en cartelera.</p>
+  <footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+</body>
+</html>

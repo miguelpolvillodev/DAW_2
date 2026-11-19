@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Películas del cine</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}" />
+</head>
+<body>
+  <header>
+    <a th:href="@{/peliculas}"><img th:src="@{/img/logo.png}" alt="Logo de Cine Nova" height="50" /></a>
+  </header>
+  <h1>Películas del cine</h1>
+  <p><a th:href="@{/peliculas/nueva}">Nueva película</a></p>
+  <form th:action="@{/peliculas}" method="get">
+    <label>Género
+      <select name="genero">
+        <option value="">Todos</option>
+        <option th:each="g : ${generos}" th:value="${g}" th:text="${g}" th:selected="${g == generoElegido}">ACCION</option>
+      </select>
+    </label>
+    <label>
+      <input type="checkbox" name="soloCartelera" value="true" th:checked="${soloCartelera}" /> Solo en cartelera
+    </label>
+    <button type="submit">Filtrar</button>
+  </form>
+  <p th:if="${#lists.isEmpty(peliculas)}">No hay películas con ese filtro.</p>
+  <table border="1" th:unless="${#lists.isEmpty(peliculas)}">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Año</th>
+        <th>Género</th>
+        <th>Recaudación</th>
+        <th>Cartelera</th>
+        <th colspan="2">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="p : ${peliculas}">
+        <td><a th:href="@{/peliculas/{id}(id=${p.id})}" th:text="${p.titulo}">Título</a></td>
+        <td th:text="${p.anio}">2020</td>
+        <td th:text="${p.genero}">ACCION</td>
+        <td th:text="${p.recaudacion}">0</td>
+        <td th:text="${p.enCartelera} ? 'Sí' : 'No'">No</td>
+        <td><a th:href="@{/peliculas/editar/{id}(id=${p.id})}">Editar</a></td>
+        <td>
+          <form th:action="@{/peliculas/borrar/{id}(id=${p.id})}" method="post">
+            <button type="submit">Borrar</button>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+</body>
+</html>

@@ -1,2 +1,7 @@
+<<<<<<< Updated upstream
 2026/11/16-19:24:40.879 888 Creating DB C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage since it was missing.
 2026/11/16-19:24:40.909 888 Reusing MANIFEST C:\Users\miguel.polvillo\Desktop\DAW2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
+=======
+2026/11/11-00:08:16.885 583c Creating DB C:\Users\Zhex\Desktop\DAW 2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage since it was missing.
+2026/11/11-00:08:16.901 583c Reusing MANIFEST C:\Users\Zhex\Desktop\DAW 2\DAW_2\SERVIDOR\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
+>>>>>>> Stashed changes

@@ -1,0 +1,23 @@
+.contenedor {
+  width: 40px;
+  margin: 2% 5%;
+  /* 1rem = 16px 
+    font-size: 2rem;*/
+
+  /* Si no hay valor sera 16px*/
+  font-size: 20px;
+  line-height: 18px;
+}
+
+p {
+  /* Pilla el valor del padre, en este caso contenedor*/
+  font-size: 2em;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .contenedor {
+    flex-direction: column;
+    width: 100%;
+  }
+}

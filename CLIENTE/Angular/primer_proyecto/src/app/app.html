@@ -20,6 +20,47 @@
 <div>
     <p>Codigo: {{asignatura.codigo}}</p>
 </div>
-
+<hr>
 <app-user-profile></app-user-profile>
+<hr>
 <app-alumno></app-alumno>
+<hr>
+<!--TWO WAY BINDING-->
+<label>Two way Binding</label> <br>
+<input type="text" [(ngModel)]="way">
+<div>{{way}}</div><br>
+
+<input type="text" [(ngModel)]="texto1" (keyup)="cambiarM($event)"><br>
+<input type="text" [(ngModel)]="texto2"(keyup)="cambiarm($event)">
+<br> <br>
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <input type="checkbox" [(ngModel)]="marcadoCheck">
+      </td>
+      <td>
+        <div [class.fondo]="marcadoCheck">
+          <p>Hola</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <a [href]="url">Enlace</a>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <button value="" (click)="cambiarTexto($evento)"></button>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+  </tbody>
+</table>
+

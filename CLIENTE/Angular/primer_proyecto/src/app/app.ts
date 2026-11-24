@@ -2,10 +2,12 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserProfile } from './user-profile/user-profile';
 import { Alumno } from './alumno/alumno';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UserProfile, Alumno],
+  //Escribiendo el nombre ya se hace el import solo
+  imports: [FormsModule, RouterOutlet, UserProfile, Alumno],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -33,6 +35,27 @@ export class App {
       return "Es menor de edad";
     }
   }
+
+  way:string = "";
+
+  texto1:string =" ";
+  texto2:string =" ";
+  cambiarM(evento:any){
+    this.texto2 = this.texto1.toUpperCase();
+  }
+
+  cambiarm(evento:any){
+    this.texto1 = this.texto2.toLowerCase();
+  }
+
+  marcadoCheck:boolean = false;
+  url:string = "https://www.ceuandalucia.es/"
+
+  cambiarTexto(evento:any){
+    
+  }
+
+  
 
 
 }

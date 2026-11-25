@@ -53,14 +53,22 @@
     </tr>
     <tr>
         <td>
-            <button value="" (click)="cambiarTexto($evento)"></button>
+            <button value={{mostrar}} (click)="cambiarTexto($event)">{{mostrar}}</button>
         </td>
-        <td></td>
+        <td>
+          <div [(ngModel)]="textoBoton" [hidden]="verTexto">Ves esto</div>
+        </td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td>
+          <button value={{boton4}} (click)="cambiarHabilitador($event)">{{boton4}}</button>
+        </td>
+        <td>
+          <button [disabled]="segundoBoton">Hola que tal</button>
+        </td>
     </tr>
   </tbody>
 </table>
+<hr>
+<app-datos-libro></app-datos-libro>
 

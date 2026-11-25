@@ -1,0 +1,10 @@
+insert into vehiculo (marca, modelo, matricula, anio, precio) values ('Seat', 'Ibiza', '1234 KLM', 2019, 11500.0);
+insert into vehiculo (marca, modelo, matricula, anio, precio) values ('Renault', 'Clio', '2345 LNP', 2021, 14900.0);
+insert into vehiculo (marca, modelo, matricula, anio, precio) values ('Toyota', 'Corolla', '3456 MQR', 2020, 18750.0);
+insert into vehiculo (marca, modelo, matricula, anio, precio) values ('Volkswagen', 'Golf', '4567 NRS', 2018, 13200.0);
+insert into vehiculo (marca, modelo, matricula, anio, precio) values ('Ford', 'Focus', '5678 PST', 2017, 9800.0);
+insert into vehiculo (marca, modelo, matricula, anio, precio) values ('Peugeot', '208', '6789 RTV', 2022, 16400.0);
+insert into vehiculo (marca, modelo, matricula, anio, precio) values ('Citroën', 'C3', '7890 STW', 2016, 7900.0);
+insert into vehiculo (marca, modelo, matricula, anio, precio) values ('Opel', 'Corsa', '8901 TVX', 2023, 17300.0);
+insert into vehiculo (marca, modelo, matricula, anio, precio) values ('Kia', 'Sportage', '9012 VWY', 2021, 23500.0);
+insert into vehiculo (marca, modelo, matricula, anio, precio) values ('Hyundai', 'Tucson', '0123 WXZ', 2020, 21900.0);

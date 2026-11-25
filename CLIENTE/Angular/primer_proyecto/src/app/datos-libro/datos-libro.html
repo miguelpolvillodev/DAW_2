@@ -1,0 +1,18 @@
+<p>Componente libroo</p>
+<ul>
+    <li>Título: {{libro.titulo}}</li>
+    <li>Autor: {{libro.autor}}</li>
+    <li>Precio: {{libro.precio}}</li>
+    <li [class.aviso]="libro.stock == 0">Stock: {{libro.stock}}</li>
+    <li>Cantidad: {{libro.cantidad}}</li>
+    <img src={{libro.imagen}} (mousemove)="posRaton($event)">
+</ul>
+
+<button (click)="anadirLibro($event)">Añadir uds</button>
+<button (click)="eliminarLibro($event)" [disabled]="libro.stock === 0">Eliminar uds</button>
+<br><br>
+<div>
+    <label>Modificar desde el input el stock</label><br>
+    <input type="number" [(ngModel)]="libro.stock">
+</div>
+

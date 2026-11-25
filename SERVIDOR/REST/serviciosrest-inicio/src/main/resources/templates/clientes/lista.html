@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes</title>
+</head>
+<body>
+    <h1>Clientes</h1>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+        <tr th:each="cliente : ${clientes}">
+            <td th:text="${cliente.nombre}">Nombre</td>
+            <td th:text="${cliente.email}">Email</td>
+            <td><a th:href="@{/clientes/{id}(id=${cliente.id})}">Ver</a></td>
+        </tr>
+    </table>
+    <p th:if="${#lists.isEmpty(clientes)}">No queda ningún cliente.</p>
+</body>
+</html>

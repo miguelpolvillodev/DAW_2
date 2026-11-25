@@ -1,0 +1,10 @@
+insert into cliente (nombre, email, telefono) values ('Ana García', 'ana.garcia@example.com', '600111222');
+insert into cliente (nombre, email, telefono) values ('Luis Pérez', 'luis.perez@example.com', '600222333');
+insert into cliente (nombre, email, telefono) values ('Marta López', 'marta.lopez@example.com', '600333444');
+insert into cliente (nombre, email, telefono) values ('Carlos Ruiz', 'carlos.ruiz@example.com', '600444555');
+insert into cliente (nombre, email, telefono) values ('Eva Soto', 'eva.soto@example.com', '600555666');
+insert into cliente (nombre, email, telefono) values ('Pablo Díaz', 'pablo.diaz@example.com', '600666777');
+insert into cliente (nombre, email, telefono) values ('Lucía Moreno', 'lucia.moreno@example.com', '600777888');
+insert into cliente (nombre, email, telefono) values ('Diego Navarro', 'diego.navarro@example.com', '600888999');
+insert into cliente (nombre, email, telefono) values ('Elena Vargas', 'elena.vargas@example.com', '600999000');
+insert into cliente (nombre, email, telefono) values ('Sergio Molina', 'sergio.molina@example.com', '601000111');

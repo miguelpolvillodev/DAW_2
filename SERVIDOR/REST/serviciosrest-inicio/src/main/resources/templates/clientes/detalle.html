@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${cliente.nombre}">Cliente</title>
+</head>
+<body>
+    <h1 th:text="${cliente.nombre}">Nombre</h1>
+    <p>Email: <span th:text="${cliente.email}">email</span></p>
+    <p>Teléfono: <span th:text="${cliente.telefono}">teléfono</span></p>
+    <form th:action="@{/clientes/{id}/borrar(id=${cliente.id})}" method="post">
+        <button type="submit">Borrar</button>
+    </form>
+    <p><a href="/clientes">Volver a la lista</a></p>
+</body>
+</html>

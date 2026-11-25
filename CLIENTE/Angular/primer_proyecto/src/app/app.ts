@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { UserProfile } from './user-profile/user-profile';
 import { Alumno } from './alumno/alumno';
 import { FormsModule } from '@angular/forms';
+import { DatosLibro } from './datos-libro/datos-libro';
 
 @Component({
   selector: 'app-root',
   //Escribiendo el nombre ya se hace el import solo
-  imports: [FormsModule, RouterOutlet, UserProfile, Alumno],
+  imports: [FormsModule, RouterOutlet, UserProfile, Alumno, DatosLibro],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -49,9 +50,37 @@ export class App {
   }
 
   marcadoCheck:boolean = false;
-  url:string = "https://www.ceuandalucia.es/"
+  url:string = "https://www.ceuandalucia.es/";
+
+  mostrar:string="mostrar";
+  textoBoton:string="";
+  verTexto:boolean = false;
 
   cambiarTexto(evento:any){
+    if(evento.target.value == "ocultar"){
+      this.mostrar = "mostrar"
+      this.verTexto = true;
+    }
+    if(evento.target.value == "mostrar"){
+      this.mostrar = "ocultar"
+      this.verTexto = false;
+    }
+  }
+
+  boton4:string="Habilitar"
+  segundoBoton:boolean=true;
+
+  cambiarHabilitador(evento:any){
+
+    if(evento.target.value == "Habilitar"){
+      this.boton4 = "Deshabilitar"
+      this.segundoBoton = false;
+    }
+
+    if(evento.target.value == "Deshabilitar"){
+      this.boton4 = "Habilitar"
+      this.segundoBoton = true;
+    }
     
   }
 

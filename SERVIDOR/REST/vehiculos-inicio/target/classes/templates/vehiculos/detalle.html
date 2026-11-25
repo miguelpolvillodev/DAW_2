@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${vehiculo.marca + ' ' + vehiculo.modelo}">Vehículo</title>
+</head>
+<body>
+    <h1 th:text="${vehiculo.marca + ' ' + vehiculo.modelo}">Marca Modelo</h1>
+    <p>Matrícula: <span th:text="${vehiculo.matricula}">matrícula</span></p>
+    <p>Año: <span th:text="${vehiculo.anio}">año</span></p>
+    <p>Precio: <span th:text="${vehiculo.precio}">precio</span> €</p>
+    <form th:action="@{/vehiculos/{id}/borrar(id=${vehiculo.id})}" method="post">
+        <button type="submit">Borrar</button>
+    </form>
+    <p><a href="/vehiculos">Volver a la lista</a></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehículos</title>
+</head>
+<body>
+    <h1>Vehículos</h1>
+    <table border="1">
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Matrícula</th>
+            <th></th>
+        </tr>
+        <tr th:each="vehiculo : ${vehiculos}">
+            <td th:text="${vehiculo.marca}">Marca</td>
+            <td th:text="${vehiculo.modelo}">Modelo</td>
+            <td th:text="${vehiculo.matricula}">Matrícula</td>
+            <td><a th:href="@{/vehiculos/{id}(id=${vehiculo.id})}">Ver</a></td>
+        </tr>
+    </table>
+    <p th:if="${#lists.isEmpty(vehiculos)}">No queda ningún vehículo.</p>
+</body>
+</html>

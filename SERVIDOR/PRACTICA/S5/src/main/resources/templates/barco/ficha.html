@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"  th:href="@{/css/estilos.css}">
+</head>
+<body>
+<img th:src="@{/img/logo.png}"> <br>
+<a th:href="@{/barcos}">Puerto</a>
+<a th:href="@{/barcos/nuevo}"> | Nuevo barco</a>
+<hr>
+<h1 th:text="${barco.nombre}"></h1>
+<ul>
+<li th:text="|Nombre: ${barco.nombre}|"></li>
+<li th:text="|Eslora: ${barco.eslora}|"></li>
+<li th:text="|Tipo: ${barco.tipo}|"></li>
+<li th:text="|Precio: ${barco.precio}|"></li>
+</ul>
+
+<p th:text="${barco.enPuerto} ? 'Este barco está en el puerto.' : 'Este barco ya no está en el puerto.'"></p>
+<a th:href="@{/barcos/editar/{id}(id=${barco.id})}">Editar este barco</a>
+<footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+
+</body>
+</html>

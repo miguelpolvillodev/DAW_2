@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"  th:href="@{/css/estilos.css}">
+</head>
+<body>
+<img th:src="@{/img/logo.png}"> <br>
+<a th:href="@{/libros}">Libros | </a>
+<a th:href="@{/libros/nuevo}">Nuevo libro</a>
+<hr>
+
+<h1 th:text="${libro.titulo}"></h1>
+<ul>
+<li th:text="|Título: ${libro.titulo}|"></li>
+<li th:text="|Páginas: ${libro.paginas}|"></li>
+<li th:text="|Categoría: ${libro.categoria}|"></li>
+<li th:text="|Ventas: ${libro.ventas}|"></li>
+</ul>
+
+<p th:text="${libro.esNovedad} ? 'Este libro es una novedad.' : 'Este libro ya no es una novedad.'"></p>
+<a th:href="@{/libros/editar/{id}(id=${libro.id})}">Editar este libro</a>
+<footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+</body>
+</html>

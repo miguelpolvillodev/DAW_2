@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"  th:href="@{/css/estilos.css}">
+</head>
+<body>
+<img th:src="@{/img/logo.png}"> <br>
+<a th:href="@{/libros}">Libros | </a>
+<a th:href="@{/libros/nuevo}">Nuevo libro</a>
+<hr>
+<h1>Libros</h1>
+
+<form th:action="@{/libros}" method="get">
+ <label>Categoría<select name="categoria">
+ <option value="">Todas</option>
+ <option th:each="g : ${categorias}" th:value="${g}" th:text="${g}"
+ th:selected="${g == categoriaElegida}">ACCION</option>
+ </select></label>
+ <label><input type="checkbox" name="soloNovedades" value="true"
+ th:checked="${soloNovedades}" />Solo novedades</label>
+ <button type="submit">Filtrar</button>
+</form>
+<p th:if="${#lists.isEmpty(listaLibros)}">
+ No hay libros con ese filtro.</p>
+<table border="1" th:unless="${#lists.isEmpty(listaLibros)}">
+<thead>
+<tr>
+<th>Título</th>
+<th>Páginas</th>
+<th>Categoría</th>
+<th>Ventas</th>
+<th>Novedad</th>
+<th>Acciones</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each="l : ${listaLibros}">
+<td>
+<a th:text="${l.titulo}" th:href="@{/libros/{id}(id=${l.id})}"></a>
+</td>
+<td th:text="${l.paginas}"></td>
+<td th:text="${l.categoria}"></td>
+<td th:text="${l.ventas}"></td>
+<td th:text="${l.esNovedad} ? 'Sí' : 'No'"></td>
+<td>
+<a th:href="@{/libros/editar/{id}(id=${l.id})}">Editar</a>
+<form th:action="@{/libros/borrar/{id}(id=${l.id})}" method="post">
+<button type="submit">Borrar</button>
+</form>
+</td>
+</tr>
+</tbody>
+
+</table>
+<footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Naviera Costa Sur</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+<img th:src="@{/img/logo.png}"> <br>
+<a th:href="@{/barcos}">Barcos | </a>
+<a th:href="@{/barcos/nuevo}">Nuevo barco</a>
+<hr>
+<h1>Barcos</h1>
+
+<form th:action="@{/barcos}" method="get">
+ <label>Tipo <select name="tipo">
+ <option value="">Todos</option>
+ <option th:each="g : ${tipos}" th:value="${g}" th:text="${g}"
+ th:selected="${g == tipoElegido}">Elige</option>
+ </select></label>
+ <label><input type="checkbox" name="soloEnServicio" value="true"
+ th:checked="${soloEnServicio}" /> Solo en servicio</label>
+ <button type="submit">Filtrar</button>
+</form>
+<p th:if="${#lists.isEmpty(listaBarcos)}">
+ No hay barcos con ese filtro.</p>
+ 
+<table border="1" th:unless="${#lists.isEmpty(listaBarcos)}">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Capacidad</th>
+				<th>Tipo</th>
+				<th>Precio</th>
+				<th>En servicio</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="b : ${listaBarcos}">
+				<td><a th:text="${b.nombre}"
+					th:href="@{/barcos/{id}(id=${b.id})}"></a></td>
+				<td th:text="${b.capacidad}"></td>
+				<td th:text="${b.tipo}"></td>
+				<td th:text="${b.precio}"></td>
+				<td th:text="${b.enServicio} ? 'Sí' : 'No'"></td>
+				<td><a th:href="@{/barcos/editar/{id}(id=${b.id})}">Editar</a>
+					<form th:action="@{/barcos/borrar/{id}(id=${b.id})}" method="post">
+						<button type="submit">Borrar</button>
+					</form>
+				</td>
+
+			</tr>
+		</tbody>
+	</table>
+	<footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+</body>
+</html>

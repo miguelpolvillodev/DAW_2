@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+<img th:src="@{/img/logo.png}">
+<br>
+<a th:href="@{/peliculas}">Cartelera | </a>
+<a th:href="@{/peliculas/nueva}">Nueva película</a>
+<hr>
+
+<h1 th:text="${pelicula.titulo}"></h1>
+
+<ul>
+<li th:text="|Año: ${pelicula.anio}|"></li>
+<li th:text="|Género: ${pelicula.genero}|"></li>
+<li th:text="|Recaudación: ${pelicula.recaudacion}|"></li>
+</ul>
+
+<p th:text="${pelicula.enCartelera} ? 'Esta película está en cartelera.' : 'Esta película ya no está en cartelera.'"></p>
+
+<footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+</body>
+</html>

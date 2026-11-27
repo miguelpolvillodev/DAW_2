@@ -19,12 +19,10 @@ public class PeliculaServiceImpl implements IPeliculaService {
 	public List<Pelicula> dameTodas() {
 		return peliculaRepository.findAll();
 	}
-
 	@Override
 	public Pelicula damePorId(int id) {
 		return peliculaRepository.findById(id).orElse(null);
 	}
-
 	@Override
 	public List<Pelicula> dameFiltradas(Genero genero, boolean soloCartelera) {
 		if (genero == null && !soloCartelera) {
@@ -38,12 +36,10 @@ public class PeliculaServiceImpl implements IPeliculaService {
 		}
 		return peliculaRepository.findByGeneroAndEnCarteleraTrue(genero);
 	}
-
 	@Override
 	public void borrarPorId(int id) {
 		peliculaRepository.deleteById(id);
 	}
-
 	@Override
 	public Pelicula guardar(Pelicula pelicula) {
 		return peliculaRepository.save(pelicula);

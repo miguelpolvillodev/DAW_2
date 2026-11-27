@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<img th:src="@{/img/logo.png}">
+<br>
+<a th:href="@{/peliculas}">Cartelera</a><span> | </span><a th:href="@{/peliculas/nueva}">Nueva película</a>
+<hr>
+
+<h1 th:text="${pelicula.id == 0} ? 'Nueva' : 'Editar'"></h1>
+
+<form th:action="@{/peliculas/guardar}"
+ th:object="${pelicula}" method="post" novalidate>
+ 
+ <input type="hidden" th:field="*{id}" />
+ 
+ <label>Título</label>
+ <input type="text" th:field="*{titulo}" />
+ <span th:if="${#fields.hasErrors('titulo')}"
+ th:errors="*{titulo}" style="color: red"></span> <br> <br>
+ 
+ <label>Año</label>
+ <input type="number" th:field="*{anio}" />
+ <span th:if="${#fields.hasErrors('anio')}"
+ th:errors="*{anio}" style="color: red"></span> <br> <br>
+ 
+ <label>Recaudación</label>
+ <input type="number" th:field="*{recaudacion}" />
+ <span th:if="${#fields.hasErrors('recaudacion')}"
+ th:errors="*{recaudacion}" style="color: red"></span> <br> <br>
+ 
+ <label>Género</label>
+ <select th:field="*{genero}">
+ <option value="">Elige</option>
+ <option th:each="g : ${generos}" th:value="${g}"
+ th:text="${g}">ACCION</option>
+ </select>
+ <span th:if="${#fields.hasErrors('genero')}"
+ th:errors="*{genero}" style="color: red"></span><br> <br>
+ 
+
+ <input type="checkbox" th:field="*{enCartelera}" />
+  <label>En cartelera</label> <br> <br>
+  
+ <button type="submit">Guardar</button>
+</form>
+
+<footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+
+</body>
+</html>

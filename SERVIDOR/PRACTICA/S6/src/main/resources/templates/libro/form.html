@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"  th:href="@{/css/estilos.css}">
+</head>
+<body>
+<img th:src="@{/img/logo.png}"> <br>
+<a th:href="@{/libros}">Libros | </a>
+<a th:href="@{/libros/nuevo}">Nuevo libro</a>
+<hr>
+
+<h1 th:text="${libro.id == 0} ? 'Nuevo' : 'Editar'"></h1>
+
+<form th:action="@{/libros/guardar}"
+ th:object="${libro}" method="post" novalidate>
+ 
+ <label>Título</label>
+ <input type="hidden" th:field="*{id}" />
+ <input type="text" th:field="*{titulo}" />
+ <span th:if="${#fields.hasErrors('titulo')}"
+ th:errors="*{titulo}" style="color: red; font-size: small"></span>
+ <br><br>
+ 
+ <label>Páginas</label>
+ <input type="number" th:field="*{paginas}" />
+ <span th:if="${#fields.hasErrors('paginas')}"
+ th:errors="*{paginas}" style="color: red; font-size: small"></span>
+ <br><br>
+ 
+ <label>Ventas</label>
+ <input type="number" th:field="*{ventas}" />
+ <span th:if="${#fields.hasErrors('ventas')}"
+ th:errors="*{ventas}" style="color: red; font-size: small"></span>
+ <br><br>
+ 
+ <label>Categoría</label>
+ <select th:field="*{categoria}">
+ <option value="">Elige</option>
+ <option th:each="g : ${categorias}" th:value="${g}"
+ th:text="${g}">Elige</option>
+ </select>
+ <span th:if="${#fields.hasErrors('categoria')}"
+ th:errors="*{categoria}" style="color: red; font-size: small"></span>
+ <br><br>
+ 
+ <input type="checkbox" th:field="*{esNovedad}" />
+ <label>Novedad</label>
+ <br><br>
+ 
+ <button type="submit">Guardar</button>
+</form>
+<footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+
+</body>
+</html>

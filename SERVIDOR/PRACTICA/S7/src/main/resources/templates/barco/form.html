@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario barco</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+<img th:src="@{/img/logo.png}"> <br>
+<a th:href="@{/barcos}">Barcos | </a>
+<a th:href="@{/barcos/nuevo}">Nuevo barco</a>
+<hr>
+
+<h1 th:text="${barco.id == 0} ? 'Nuevo' : 'Editar'"></h1>
+
+<form th:action="@{/barcos/guardar}"
+ th:object="${barco}" method="post" novalidate>
+ <input type="hidden" th:field="*{id}" />
+ 
+ <label>Nombre</label>
+ <input type="text" th:field="*{nombre}" />
+ <span th:if="${#fields.hasErrors('nombre')}"
+ th:errors="*{nombre}" style="color: red;font-size: small"></span>
+ <br><br>
+ 
+ <label>Capacidad</label>
+ <input type="number" th:field="*{capacidad}" />
+ <span th:if="${#fields.hasErrors('capacidad')}"
+ th:errors="*{capacidad}" style="color: red;font-size: small"></span>
+ <br><br>
+ 
+ <label>Precio</label>
+ <input type="number" th:field="*{precio}" />
+ <span th:if="${#fields.hasErrors('precio')}"
+ th:errors="*{precio}" style="color: red;font-size: small"></span>
+ <br><br>
+ 
+ <label>Tipo</label>
+ <select th:field="*{tipo}">
+ <option value="">Elige</option>
+ <option th:each="g : ${tipos}" th:value="${g}"
+ th:text="${g}">Elige</option>
+ </select>
+ <span th:if="${#fields.hasErrors('tipo')}"
+ th:errors="*{tipo}" style="color: red;font-size: small"></span>
+ <br><br>
+ 
+ <input type="checkbox" th:field="*{enServicio}" />
+ <label>En servicio</label>
+ <br><br>
+ 
+ <button type="submit">Guardar</button>
+</form>
+
+<footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+</body>
+</html>

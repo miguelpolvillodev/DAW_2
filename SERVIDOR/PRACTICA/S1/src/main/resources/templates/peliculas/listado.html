@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body>
+<img th:src="@{/img/logo.png}"><br>
+<a th:href="@{/peliculas}">Cartelera</a>
+<a th:href="@{/peliculas/nueva}">Nueva película</a>
+<hr>
+
+<h1>Películas del cine</h1>
+
+<form th:action="@{/peliculas}" method="get">
+    <label>Género
+      <select name="genero">
+        <option value="">Todos</option>
+        <option th:each="g : ${generos}" th:value="${g}" th:text="${g}" th:selected="${g == generoElegido}">ACCION</option>
+      </select>
+    </label>
+    
+    <label>
+      <input type="checkbox" name="soloCartelera" value="true" th:checked="${soloCartelera}" /> Solo en cartelera
+    </label>
+    
+    <button type="submit">Filtrar</button>
+  </form>
+  
+  <p th:if="${#lists.isEmpty(listaPeliculas)}">No hay películas con ese filtro.</p>
+
+<table border="1" th:unless="${#lists.isEmpty(listaPeliculas)}">
+<thead>
+<tr>
+<th>Título</th>
+<th>Año</th>
+<th>Género</th>
+<th>Recaudación</th>
+<th>Cartelera</th>
+<th>Acciones</th>
+</tr>
+</thead>
+<tbody >
+<tr th:each = "p : ${listaPeliculas}">
+<td>
+<a th:text="${p.titulo}" th:href ="@{/peliculas/{id}(id=${p.id})}"></a></td>
+<td th:text="${p.anio}"></td>
+<td th:text="${p.genero}"></td>
+<td th:text="${p.recaudacion}"></td>
+<td th:text="${p.enCartelera} ? 'Sí' : 'No'"></td>
+<td >
+<a th:href="@{/peliculas/editar/{id}(id=${p.id})}">Editar</a>
+<form th:action="@{/peliculas/borrar/{id}(id=${p.id})}" method="post">
+<button type="submit">Borrar</button>
+</form>
+</td>
+
+
+
+</tr>
+</tbody>
+
+</table>
+<footer th:replace="~{fragmentos/comun :: pie}">Pie</footer>
+</body>
+</html>

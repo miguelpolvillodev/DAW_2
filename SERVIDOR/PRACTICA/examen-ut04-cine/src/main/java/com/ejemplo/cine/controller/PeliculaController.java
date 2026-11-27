@@ -25,9 +25,10 @@ public class PeliculaController {
 	private IPeliculaService peliculaService;
 
 	@GetMapping("/peliculas")
-	public String lista(Model model, @RequestParam(required = false) Genero genero,
+	public String lista(Model model,
+			@RequestParam(required = false) Genero genero,
 			@RequestParam(defaultValue = "false") boolean soloCartelera) {
-		model.addAttribute("peliculas", peliculaService.dameFiltradas(genero, soloCartelera));
+		model.addAttribute("listaPeliculas", peliculaService.dameFiltradas(genero, soloCartelera));
 		model.addAttribute("generos", Genero.values());
 		model.addAttribute("generoElegido", genero);
 		model.addAttribute("soloCartelera", soloCartelera);
@@ -57,14 +58,14 @@ public class PeliculaController {
 	public String editar(@PathVariable int id, Model model) {
 		model.addAttribute("pelicula", peliculaService.damePorId(id));
 		model.addAttribute("generos", Genero.values());
-		return "pelicula/formulario";
+		return "peliculas/form";
 	}
 
 	@PostMapping("/peliculas/guardar")
 	public String guardar(@Valid @ModelAttribute("pelicula") Pelicula pelicula, BindingResult resultado, Model model) {
 		if (resultado.hasErrors()) {
 			model.addAttribute("generos", Genero.values());
-			return "pelicula/formulario";
+			return "peliculas/form";
 		}
 		peliculaService.guardar(pelicula);
 		return "redirect:/peliculas";

@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserProfile } from './user-profile/user-profile';
 import { Alumno } from './alumno/alumno';
@@ -84,7 +84,16 @@ export class App {
     
   }
 
-  
+  valorHijo:string = ""
+  seleccionarPadre(nombre: string){
+    this.valorHijo = nombre;
+  }
+
+  numLibro:string = "";
+  tituloLibro:string = ""
+  mostrarTitulo(titulo: string){
+    this.tituloLibro = titulo;
+  }
 
 
 }

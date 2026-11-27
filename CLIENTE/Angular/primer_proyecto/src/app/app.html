@@ -71,4 +71,12 @@
 </table>
 <hr>
 <app-datos-libro></app-datos-libro>
+<hr>
+<app-user-profile name="Harry Potter" role="Mago" (selected)="seleccionarPadre($event)"></app-user-profile>
+<p>Variable name del hijo -> {{valorHijo}}</p>
+
+
+<input type="text" [value]="numLibro">
+
+<app-datos-libro [numLibrosHijo]="numLibro" (selected)="mostrarTitulo($event)"></app-datos-libro>
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   imports: [],
@@ -15,14 +15,27 @@ export class UserProfile {
   imagen:string = "./img/perro.jpg"
   orange:string = "naranja"
 
+  @Input()
+  name:string = "";
 
-  
+  @Input()
+  role:string = "";
+
+  @Output()
+  selected = new EventEmitter<string>();
+
+  seleccionar(){
+    this.selected.emit(this.name);
+  }
+
   getNombre() : string {
     return this.nombre;
   }
   getRol() : string {
     return this.rol;
   }
+
+  
 
   
 
